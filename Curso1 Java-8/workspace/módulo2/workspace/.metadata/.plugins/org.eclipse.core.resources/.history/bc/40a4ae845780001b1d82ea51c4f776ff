@@ -1,0 +1,20 @@
+package Exer13;
+
+import org.junit.Test;
+
+public class Exer13 {
+	
+	@Test
+	public void exer12_1() {
+		//ponteiro funcional
+		Runnable r1 = () -> System.out.println("rodando em outra thread");
+		
+		Runnable r2 = () -> {
+			for (int i = 0; i<5; i++){
+			System.out.println(i);
+			}
+		};
+		
+		}
+
+}

@@ -1,0 +1,12 @@
+package Exer9;
+
+import org.junit.Test;
+
+public class Exer9 {
+
+	@Test
+	public void exer9() {
+	
+		
+	}
+}

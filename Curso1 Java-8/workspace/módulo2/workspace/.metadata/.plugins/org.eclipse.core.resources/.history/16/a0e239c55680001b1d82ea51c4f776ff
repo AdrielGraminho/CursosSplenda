@@ -1,0 +1,12 @@
+package Exer13;
+
+import org.junit.Test;
+
+public class Exer13 {
+	
+	@Test
+	public void exer12_1() {
+		
+	}
+
+}

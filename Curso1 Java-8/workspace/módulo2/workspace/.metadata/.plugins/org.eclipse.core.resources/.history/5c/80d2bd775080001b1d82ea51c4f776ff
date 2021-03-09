@@ -1,0 +1,11 @@
+package Exer8;
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+public class Forno {
+	
+	public void assar (Pizza pizza){
+		pizza.preparar(); //operação polimórificas
+	}
+
+}

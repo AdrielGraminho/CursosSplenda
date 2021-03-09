@@ -1,0 +1,7 @@
+package Exer8;
+
+public interface Pizza {
+	
+	preparar();
+
+}

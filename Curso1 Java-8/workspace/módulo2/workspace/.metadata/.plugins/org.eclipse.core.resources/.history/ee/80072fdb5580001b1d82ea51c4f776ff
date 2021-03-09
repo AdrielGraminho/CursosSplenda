@@ -1,0 +1,16 @@
+package Exer12;
+
+import Exer10.Matematica;
+
+public class Exer12 {
+
+	public void calcular(Matematica m) {
+		System.out.println(m.operar(10, 10));
+	}
+
+	public void exer12(){
+		calcular((Integer v1, Integer v2) -> {
+			return v1 / v2;
+		})
+	}
+}

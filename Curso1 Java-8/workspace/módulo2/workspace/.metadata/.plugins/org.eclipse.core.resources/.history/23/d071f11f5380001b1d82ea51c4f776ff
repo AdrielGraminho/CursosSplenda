@@ -1,0 +1,5 @@
+package Exer10;
+
+public interface Matematica {
+
+}

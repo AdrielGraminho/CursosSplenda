@@ -1,0 +1,3 @@
+Pacotes são a forma para organizar as classes em java.
+throws= "avisar" que pode ocorrer uma excessão
+throw = "criar" uma excessão
