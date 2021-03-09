@@ -15,6 +15,7 @@ public class Identidade extends Applet {
 					I[i][j]=1;
 				else
 					I[i][j]=0;
+				System.out.print(I[i][j]);
 			}
 			System.out.println("\n====");
 		}
