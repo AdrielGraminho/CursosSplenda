@@ -1,0 +1,10 @@
+Applet é uma tecnologia para desenvolver web com java.
+Não tem método main.
+O método principal é o "paint".
+
+
+init() - inicia componentes applet
+start() - o que fazer quando o applet iniciar
+stop () - o que fazer antes do applet parar
+destroy()- o que fazer quando o applet terminar
+paint()- o que desenhar no contexto gráfico
