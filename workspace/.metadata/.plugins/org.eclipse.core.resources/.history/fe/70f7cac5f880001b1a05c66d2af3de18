@@ -22,7 +22,7 @@ public class AloMundo extends JApplet {
 		this.setSize(400,100);
 		g.setFont(new Font("Times New Roman",Font.BOLD,16));
 		g.drawString("Versão JVM:"+ System.getProperty("java.version"), 20,20);
-		g.drawString("Versão S.O.:"+ System.getProperty("os.name"), 50,50);
+		g.drawString("Versão S.O.:"+ System.getProperty("os.name"), 20,20);
 
 	}
 	
