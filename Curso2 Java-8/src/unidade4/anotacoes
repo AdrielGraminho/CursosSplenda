@@ -1,0 +1,8 @@
+todas interfaces exceto map descendem de Collection
+
+pilha- o último elemento é o primeiro a "sair"
+
+fila simplesmente encadeada- primeiro que entra, primeiro que sai
+
+fila duplamente encadeada- primeiro que entra, primeiro que sai, realiza operação de adição e remoção no fim da lista e remoção no início, respectivamente
+
