@@ -1,8 +1,6 @@
 package unidade5;
 
-import java.util.regex.Matcher;
-
-public class Calculadora {
+public class Calculadora implements Formula {
 
 	public static void main(String[] args) {
 
@@ -46,6 +44,12 @@ public class Calculadora {
 		System.out.println(objeto.potenciacao(5,5));
 		System.out.println(objeto.radiciacao(5,5));
 
+	}
+
+	@Override
+	public double calcular() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

@@ -1,2 +1,0 @@
-Programação funcional- paradigma de desenvolvimento que visualiza a computação como uma avaliação matemática.
-Vai contra a programação OO.

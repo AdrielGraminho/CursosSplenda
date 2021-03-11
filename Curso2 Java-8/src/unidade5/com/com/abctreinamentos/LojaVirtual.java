@@ -6,13 +6,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 public class LojaVirtual {
 
 	static Map<Cliente, List<Curso>> pagamentos = new HashMap<>();
 	
 	public static void listarCursos(List<Curso> lista) {
-		lista.forEach(p->System.out.println(p.getCdCurso()+"<''>"+p.getNome()));
+		//lista.forEach(p->System.out.println(p.getCdCurso()+"<''>"+p.getNome()));
+		lista.forEach(System.out::print);
 	}
 	public static void main(String[] args) {
 		// criar os cursos disponíveis no site para venda
@@ -51,6 +53,9 @@ public class LojaVirtual {
 		entrada.close();
 		pagamentos.put(adriel, cursoAdriel);
 		System.out.println(pagamentos);
-		listarCursos(cursoAdriel);
+		//listarCursos(cursoAdriel);
+		Consumer<List<Curso>> consumer = LojaVirtual::listarCursos;
+		consumer.accept(cursoAdriel);
+
 	}
 }
