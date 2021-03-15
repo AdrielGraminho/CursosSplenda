@@ -1,4 +1,4 @@
-package unidade5.com.com.abctreinamentos;
+package unidade3.com.abctreinamentos;
 
 public class Cliente {
 
