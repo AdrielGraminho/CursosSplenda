@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrUid$" table="LOGMNR_UID$" optimistic-lock="version">
+        <id name="logmnrUid" type="big_decimal">
+            <column name="LOGMNR_UID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="logmnrDid" type="big_decimal">
+            <column name="LOGMNR_DID" precision="22" scale="0" />
+        </property>
+        <property name="logmnrMdh" type="big_decimal">
+            <column name="LOGMNR_MDH" precision="22" scale="0" />
+        </property>
+        <property name="pdbName" type="string">
+            <column name="PDB_NAME" length="384" />
+        </property>
+        <property name="pdbId" type="big_decimal">
+            <column name="PDB_ID" precision="22" scale="0" />
+        </property>
+        <property name="pdbUid" type="big_decimal">
+            <column name="PDB_UID" precision="22" scale="0" />
+        </property>
+        <property name="startScn" type="big_decimal">
+            <column name="START_SCN" precision="22" scale="0" />
+        </property>
+        <property name="endScn" type="big_decimal">
+            <column name="END_SCN" precision="22" scale="0" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="string">
+            <column name="SPARE3" length="4000" />
+        </property>
+        <property name="spare4" type="serializable">
+            <column name="SPARE4" />
+        </property>
+    </class>
+</hibernate-mapping>

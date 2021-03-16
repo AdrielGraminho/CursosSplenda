@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$parameters" table="LOGSTDBY$PARAMETERS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$parametersId">
+            <key-property name="name" type="string">
+                <column name="NAME" length="30" />
+            </key-property>
+            <key-property name="value" type="string">
+                <column name="VALUE" length="2000" />
+            </key-property>
+            <key-property name="type" type="big_decimal">
+                <column name="TYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="scn" type="big_decimal">
+                <column name="SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

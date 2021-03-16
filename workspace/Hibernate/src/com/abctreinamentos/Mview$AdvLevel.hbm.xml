@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvLevel" table="MVIEW$_ADV_LEVEL" optimistic-lock="version">
+        <comment>Level definition</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvLevelId">
+            <key-property name="runid#" type="big_decimal">
+                <column name="RUNID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="levelid#" type="big_decimal">
+                <column name="LEVELID#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="dimobj#" type="big_decimal">
+            <column name="DIMOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="tblobj#" type="big_decimal">
+            <column name="TBLOBJ#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="columnlist" type="binary">
+            <column name="COLUMNLIST" not-null="true" />
+        </property>
+        <property name="levelname" type="string">
+            <column name="LEVELNAME" length="128" />
+        </property>
+        <set name="mview$AdvRollupsForMview$AdvRollupPfk" table="MVIEW$_ADV_ROLLUP" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+                <column name="PLEVELID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvRollup" />
+        </set>
+        <set name="mview$AdvRollupsForMview$AdvRollupCfk" table="MVIEW$_ADV_ROLLUP" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+                <column name="CLEVELID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvRollup" />
+        </set>
+    </class>
+</hibernate-mapping>

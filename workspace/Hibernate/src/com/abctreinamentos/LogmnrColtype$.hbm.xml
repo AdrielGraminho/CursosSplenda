@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrColtype$" table="LOGMNR_COLTYPE$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrColtype$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="intcol#" type="big_decimal">
+                <column name="INTCOL#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="col#" type="big_decimal">
+            <column name="COL#" precision="22" scale="0" />
+        </property>
+        <property name="toid" type="binary">
+            <column name="TOID" />
+        </property>
+        <property name="version#" type="big_decimal">
+            <column name="VERSION#" precision="22" scale="0" />
+        </property>
+        <property name="packed" type="big_decimal">
+            <column name="PACKED" precision="22" scale="0" />
+        </property>
+        <property name="intcols" type="big_decimal">
+            <column name="INTCOLS" precision="22" scale="0" />
+        </property>
+        <property name="intcol#s" type="binary">
+            <column name="INTCOL#S" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="typidcol#" type="big_decimal">
+            <column name="TYPIDCOL#" precision="22" scale="0" />
+        </property>
+        <property name="synobj#" type="big_decimal">
+            <column name="SYNOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

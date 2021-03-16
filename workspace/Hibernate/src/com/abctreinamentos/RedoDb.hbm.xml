@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.RedoDb" table="REDO_DB" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.RedoDbId">
+            <key-property name="dbid" type="big_decimal">
+                <column name="DBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="globalDbname" type="string">
+                <column name="GLOBAL_DBNAME" length="129" />
+            </key-property>
+            <key-property name="dbuname" type="string">
+                <column name="DBUNAME" length="32" />
+            </key-property>
+            <key-property name="version" type="string">
+                <column name="VERSION" length="32" />
+            </key-property>
+            <key-property name="thread#" type="big_decimal">
+                <column name="THREAD#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetlogsScnBas" type="big_decimal">
+                <column name="RESETLOGS_SCN_BAS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetlogsScnWrp" type="big_decimal">
+                <column name="RESETLOGS_SCN_WRP" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetlogsTime" type="big_decimal">
+                <column name="RESETLOGS_TIME" precision="22" scale="0" />
+            </key-property>
+            <key-property name="presetlogsScnBas" type="big_decimal">
+                <column name="PRESETLOGS_SCN_BAS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="presetlogsScnWrp" type="big_decimal">
+                <column name="PRESETLOGS_SCN_WRP" precision="22" scale="0" />
+            </key-property>
+            <key-property name="presetlogsTime" type="big_decimal">
+                <column name="PRESETLOGS_TIME" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoRcvCur" type="big_decimal">
+                <column name="SEQNO_RCV_CUR" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoRcvLo" type="big_decimal">
+                <column name="SEQNO_RCV_LO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoRcvHi" type="big_decimal">
+                <column name="SEQNO_RCV_HI" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoDoneCur" type="big_decimal">
+                <column name="SEQNO_DONE_CUR" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoDoneLo" type="big_decimal">
+                <column name="SEQNO_DONE_LO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seqnoDoneHi" type="big_decimal">
+                <column name="SEQNO_DONE_HI" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapSeqno" type="big_decimal">
+                <column name="GAP_SEQNO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapRet" type="big_decimal">
+                <column name="GAP_RET" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapDone" type="big_decimal">
+                <column name="GAP_DONE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="applySeqno" type="big_decimal">
+                <column name="APPLY_SEQNO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="applyDone" type="big_decimal">
+                <column name="APPLY_DONE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="purgeDone" type="big_decimal">
+                <column name="PURGE_DONE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="hasChild" type="big_decimal">
+                <column name="HAS_CHILD" precision="22" scale="0" />
+            </key-property>
+            <key-property name="error1" type="big_decimal">
+                <column name="ERROR1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="status" type="big_decimal">
+                <column name="STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="createDate" type="date">
+                <column name="CREATE_DATE" length="7" />
+            </key-property>
+            <key-property name="ts1" type="big_decimal">
+                <column name="TS1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="ts2" type="big_decimal">
+                <column name="TS2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapNextScn" type="big_decimal">
+                <column name="GAP_NEXT_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapNextTime" type="big_decimal">
+                <column name="GAP_NEXT_TIME" precision="22" scale="0" />
+            </key-property>
+            <key-property name="curscnTime" type="big_decimal">
+                <column name="CURSCN_TIME" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetlogsScn" type="big_decimal">
+                <column name="RESETLOGS_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="presetlogsScn" type="big_decimal">
+                <column name="PRESETLOGS_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="gapRet2" type="big_decimal">
+                <column name="GAP_RET2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="curlog" type="big_decimal">
+                <column name="CURLOG" precision="22" scale="0" />
+            </key-property>
+            <key-property name="endian" type="big_decimal">
+                <column name="ENDIAN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="enqidx" type="big_decimal">
+                <column name="ENQIDX" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare4" type="big_decimal">
+                <column name="SPARE4" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare5" type="date">
+                <column name="SPARE5" length="7" />
+            </key-property>
+            <key-property name="spare6" type="string">
+                <column name="SPARE6" length="65" />
+            </key-property>
+            <key-property name="spare7" type="string">
+                <column name="SPARE7" length="129" />
+            </key-property>
+            <key-property name="ts3" type="big_decimal">
+                <column name="TS3" precision="22" scale="0" />
+            </key-property>
+            <key-property name="curblkno" type="big_decimal">
+                <column name="CURBLKNO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare8" type="big_decimal">
+                <column name="SPARE8" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare9" type="big_decimal">
+                <column name="SPARE9" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare10" type="big_decimal">
+                <column name="SPARE10" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare11" type="big_decimal">
+                <column name="SPARE11" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare12" type="big_decimal">
+                <column name="SPARE12" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

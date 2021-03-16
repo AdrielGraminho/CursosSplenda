@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$connections" table="ROLLING$CONNECTIONS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$connectionsId">
+            <key-property name="sourceRdbid" type="big_decimal">
+                <column name="SOURCE_RDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="destRdbid" type="big_decimal">
+                <column name="DEST_RDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attributes" type="big_decimal">
+                <column name="ATTRIBUTES" precision="22" scale="0" />
+            </key-property>
+            <key-property name="serviceName" type="string">
+                <column name="SERVICE_NAME" length="256" />
+            </key-property>
+            <key-property name="connHandle" type="big_decimal">
+                <column name="CONN_HANDLE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="connectTime" type="serializable">
+                <column name="CONNECT_TIME" />
+            </key-property>
+            <key-property name="sendTime" type="serializable">
+                <column name="SEND_TIME" />
+            </key-property>
+            <key-property name="disconnectTime" type="serializable">
+                <column name="DISCONNECT_TIME" />
+            </key-property>
+            <key-property name="updateTime" type="serializable">
+                <column name="UPDATE_TIME" />
+            </key-property>
+            <key-property name="sourcePid" type="big_decimal">
+                <column name="SOURCE_PID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="destPid" type="big_decimal">
+                <column name="DEST_PID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

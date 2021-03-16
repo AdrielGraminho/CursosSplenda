@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$plan" table="ROLLING$PLAN" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$planId">
+            <key-property name="instid" type="big_decimal">
+                <column name="INSTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="batchid" type="big_decimal">
+                <column name="BATCHID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="directid" type="big_decimal">
+                <column name="DIRECTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="taskid" type="big_decimal">
+                <column name="TASKID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="revision" type="big_decimal">
+                <column name="REVISION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="phase" type="big_decimal">
+                <column name="PHASE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="status" type="big_decimal">
+                <column name="STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="progress" type="big_decimal">
+                <column name="PROGRESS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="source" type="big_decimal">
+                <column name="SOURCE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="target" type="big_decimal">
+                <column name="TARGET" precision="22" scale="0" />
+            </key-property>
+            <key-property name="rflags" type="big_decimal">
+                <column name="RFLAGS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="opcode" type="big_decimal">
+                <column name="OPCODE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="p1" type="string">
+                <column name="P1" length="256" />
+            </key-property>
+            <key-property name="p2" type="string">
+                <column name="P2" length="256" />
+            </key-property>
+            <key-property name="p3" type="string">
+                <column name="P3" length="256" />
+            </key-property>
+            <key-property name="p4" type="string">
+                <column name="P4" length="256" />
+            </key-property>
+            <key-property name="description" type="string">
+                <column name="DESCRIPTION" length="256" />
+            </key-property>
+            <key-property name="execStatus" type="big_decimal">
+                <column name="EXEC_STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="execInfo" type="string">
+                <column name="EXEC_INFO" length="256" />
+            </key-property>
+            <key-property name="execTime" type="serializable">
+                <column name="EXEC_TIME" />
+            </key-property>
+            <key-property name="finishTime" type="serializable">
+                <column name="FINISH_TIME" />
+            </key-property>
+            <key-property name="postStatus" type="big_decimal">
+                <column name="POST_STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="256" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

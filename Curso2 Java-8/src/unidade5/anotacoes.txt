@@ -1,0 +1,1 @@
+Interface funcional pode ter apenas um método abstrato

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Aq$Queues" table="AQ$_QUEUES" optimistic-lock="version">
+        <id name="oid" type="binary">
+            <column name="OID" />
+            <generator class="assigned" />
+        </id>
+        <property name="eventid" type="big_decimal">
+            <column name="EVENTID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="128" not-null="true" />
+        </property>
+        <property name="tableObjno" type="big_decimal">
+            <column name="TABLE_OBJNO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="usage" type="big_decimal">
+            <column name="USAGE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="enableFlag" type="big_decimal">
+            <column name="ENABLE_FLAG" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxRetries" type="big_decimal">
+            <column name="MAX_RETRIES" precision="22" scale="0" />
+        </property>
+        <property name="retryDelay" type="big_decimal">
+            <column name="RETRY_DELAY" precision="22" scale="0" />
+        </property>
+        <property name="properties" type="big_decimal">
+            <column name="PROPERTIES" precision="22" scale="0" />
+        </property>
+        <property name="retTime" type="big_decimal">
+            <column name="RET_TIME" precision="22" scale="0" />
+        </property>
+        <property name="queueComment" type="string">
+            <column name="QUEUE_COMMENT" length="2000" />
+        </property>
+        <property name="subscribers" type="serializable">
+            <column name="SUBSCRIBERS" />
+        </property>
+        <property name="memoryThreshold" type="big_decimal">
+            <column name="MEMORY_THRESHOLD" precision="22" scale="0" />
+        </property>
+        <property name="serviceName" type="string">
+            <column name="SERVICE_NAME" length="64" />
+        </property>
+        <property name="networkName" type="string">
+            <column name="NETWORK_NAME" length="256" />
+        </property>
+        <property name="subOid" type="binary">
+            <column name="SUB_OID" />
+        </property>
+        <property name="sharded" type="big_decimal">
+            <column name="SHARDED" precision="22" scale="0" />
+        </property>
+        <property name="baseQueue" type="big_decimal">
+            <column name="BASE_QUEUE" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

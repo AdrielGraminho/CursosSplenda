@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Ol$hints" table="OL$HINTS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Ol$hintsId">
+            <key-property name="olName" type="string">
+                <column name="OL_NAME" length="128" />
+            </key-property>
+            <key-property name="hint#" type="big_decimal">
+                <column name="HINT#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="category" type="string">
+                <column name="CATEGORY" length="128" />
+            </key-property>
+            <key-property name="hintType" type="big_decimal">
+                <column name="HINT_TYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="hintText" type="string">
+                <column name="HINT_TEXT" length="512" />
+            </key-property>
+            <key-property name="stage#" type="big_decimal">
+                <column name="STAGE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="node#" type="big_decimal">
+                <column name="NODE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column name="TABLE_NAME" length="128" />
+            </key-property>
+            <key-property name="tableTin" type="big_decimal">
+                <column name="TABLE_TIN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="tablePos" type="big_decimal">
+                <column name="TABLE_POS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="refId" type="big_decimal">
+                <column name="REF_ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="userTableName" type="string">
+                <column name="USER_TABLE_NAME" length="260" />
+            </key-property>
+            <key-property name="cost" type="java.lang.Double">
+                <column name="COST" precision="126" scale="0" />
+            </key-property>
+            <key-property name="cardinality" type="java.lang.Double">
+                <column name="CARDINALITY" precision="126" scale="0" />
+            </key-property>
+            <key-property name="bytes" type="java.lang.Double">
+                <column name="BYTES" precision="126" scale="0" />
+            </key-property>
+            <key-property name="hintTextoff" type="big_decimal">
+                <column name="HINT_TEXTOFF" precision="22" scale="0" />
+            </key-property>
+            <key-property name="hintTextlen" type="big_decimal">
+                <column name="HINT_TEXTLEN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="joinPred" type="string">
+                <column name="JOIN_PRED" length="2000" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="hintString" type="clob">
+                <column name="HINT_STRING" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

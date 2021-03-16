@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvParameters" table="MVIEW$_ADV_PARAMETERS" optimistic-lock="version">
+        <comment>Summary advisor tuning parameters</comment>
+        <id name="parameterName" type="string">
+            <column name="PARAMETER_NAME" length="128" />
+            <generator class="assigned" />
+        </id>
+        <property name="parameterType" type="big_decimal">
+            <column name="PARAMETER_TYPE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="stringValue" type="string">
+            <column name="STRING_VALUE" length="30" />
+        </property>
+        <property name="dateValue" type="date">
+            <column name="DATE_VALUE" length="7" />
+        </property>
+        <property name="numericalValue" type="big_decimal">
+            <column name="NUMERICAL_VALUE" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

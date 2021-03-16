@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.SchedulerJobArgsTbl" table="SCHEDULER_JOB_ARGS_TBL" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.SchedulerJobArgsTblId">
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="jobName" type="string">
+                <column name="JOB_NAME" length="128" />
+            </key-property>
+            <key-property name="argumentName" type="string">
+                <column name="ARGUMENT_NAME" length="128" />
+            </key-property>
+            <key-property name="argumentPosition" type="big_decimal">
+                <column name="ARGUMENT_POSITION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="argumentType" type="string">
+                <column name="ARGUMENT_TYPE" length="257" />
+            </key-property>
+            <key-property name="value" type="string">
+                <column name="VALUE" length="4000" />
+            </key-property>
+            <key-property name="anydataValue" type="serializable">
+                <column name="ANYDATA_VALUE" />
+            </key-property>
+            <key-property name="outArgument" type="string">
+                <column name="OUT_ARGUMENT" length="5" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

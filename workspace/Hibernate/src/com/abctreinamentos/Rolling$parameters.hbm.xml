@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$parameters" table="ROLLING$PARAMETERS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$parametersId">
+            <key-property name="scope" type="big_decimal">
+                <column name="SCOPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="NAME" length="32" />
+            </key-property>
+            <key-property name="id" type="big_decimal">
+                <column name="ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="descrip" type="string">
+                <column name="DESCRIP" length="256" />
+            </key-property>
+            <key-property name="type" type="big_decimal">
+                <column name="TYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="datatype" type="big_decimal">
+                <column name="DATATYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attributes" type="big_decimal">
+                <column name="ATTRIBUTES" precision="22" scale="0" />
+            </key-property>
+            <key-property name="curval" type="string">
+                <column name="CURVAL" length="1024" />
+            </key-property>
+            <key-property name="lstval" type="string">
+                <column name="LSTVAL" length="1024" />
+            </key-property>
+            <key-property name="defval" type="string">
+                <column name="DEFVAL" length="1024" />
+            </key-property>
+            <key-property name="minval" type="big_decimal">
+                <column name="MINVAL" precision="22" scale="0" />
+            </key-property>
+            <key-property name="maxval" type="big_decimal">
+                <column name="MAXVAL" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

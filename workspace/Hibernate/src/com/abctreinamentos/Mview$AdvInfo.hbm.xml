@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvInfo" table="MVIEW$_ADV_INFO" optimistic-lock="version">
+        <comment>Internal table for passing information from the SQL analyzer</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvInfoId">
+            <key-property name="runid#" type="big_decimal">
+                <column name="RUNID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seq#" type="big_decimal">
+                <column name="SEQ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="type" type="big_decimal">
+            <column name="TYPE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="infolen" type="big_decimal">
+            <column name="INFOLEN" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="info" type="binary">
+            <column name="INFO" />
+        </property>
+        <property name="status" type="big_decimal">
+            <column name="STATUS" precision="22" scale="0" />
+        </property>
+        <property name="flag" type="big_decimal">
+            <column name="FLAG" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

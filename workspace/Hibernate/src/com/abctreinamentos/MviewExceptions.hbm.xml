@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.MviewExceptions" table="MVIEW_EXCEPTIONS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.MviewExceptionsId">
+            <key-property name="runid" type="big_decimal">
+                <column name="RUNID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column name="TABLE_NAME" length="128" />
+            </key-property>
+            <key-property name="dimensionName" type="string">
+                <column name="DIMENSION_NAME" length="128" />
+            </key-property>
+            <key-property name="relationship" type="string">
+                <column name="RELATIONSHIP" length="11" />
+            </key-property>
+            <key-property name="badRowid" type="serializable">
+                <column name="BAD_ROWID" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

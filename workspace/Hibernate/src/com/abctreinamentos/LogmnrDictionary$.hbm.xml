@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrDictionary$" table="LOGMNR_DICTIONARY$" optimistic-lock="version">
+        <id name="logmnrUid" type="big_decimal">
+            <column name="LOGMNR_UID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="dbName" type="string">
+            <column name="DB_NAME" length="27" />
+        </property>
+        <property name="dbId" type="big_decimal">
+            <column name="DB_ID" precision="20" scale="0" />
+        </property>
+        <property name="dbCreated" type="string">
+            <column name="DB_CREATED" length="20" />
+        </property>
+        <property name="dbDictCreated" type="string">
+            <column name="DB_DICT_CREATED" length="20" />
+        </property>
+        <property name="dbDictScn" type="big_decimal">
+            <column name="DB_DICT_SCN" precision="22" scale="0" />
+        </property>
+        <property name="dbThreadMap" type="binary">
+            <column name="DB_THREAD_MAP" />
+        </property>
+        <property name="dbTxnScnbas" type="big_decimal">
+            <column name="DB_TXN_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="dbTxnScnwrp" type="big_decimal">
+            <column name="DB_TXN_SCNWRP" precision="22" scale="0" />
+        </property>
+        <property name="dbResetlogsChange#" type="big_decimal">
+            <column name="DB_RESETLOGS_CHANGE#" precision="22" scale="0" />
+        </property>
+        <property name="dbResetlogsTime" type="string">
+            <column name="DB_RESETLOGS_TIME" length="20" />
+        </property>
+        <property name="dbVersionTime" type="string">
+            <column name="DB_VERSION_TIME" length="20" />
+        </property>
+        <property name="dbRedoTypeId" type="string">
+            <column name="DB_REDO_TYPE_ID" length="8" />
+        </property>
+        <property name="dbRedoRelease" type="string">
+            <column name="DB_REDO_RELEASE" length="60" />
+        </property>
+        <property name="dbCharacterSet" type="string">
+            <column name="DB_CHARACTER_SET" length="192" />
+        </property>
+        <property name="dbVersion" type="string">
+            <column name="DB_VERSION" length="240" />
+        </property>
+        <property name="dbStatus" type="string">
+            <column name="DB_STATUS" length="240" />
+        </property>
+        <property name="dbGlobalName" type="string">
+            <column name="DB_GLOBAL_NAME" length="384" />
+        </property>
+        <property name="dbDictMaxobjects" type="big_decimal">
+            <column name="DB_DICT_MAXOBJECTS" precision="22" scale="0" />
+        </property>
+        <property name="dbDictObjectcount" type="big_decimal">
+            <column name="DB_DICT_OBJECTCOUNT" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="pdbName" type="string">
+            <column name="PDB_NAME" length="384" />
+        </property>
+        <property name="pdbId" type="big_decimal">
+            <column name="PDB_ID" precision="22" scale="0" />
+        </property>
+        <property name="pdbUid" type="big_decimal">
+            <column name="PDB_UID" precision="22" scale="0" />
+        </property>
+        <property name="pdbDbid" type="big_decimal">
+            <column name="PDB_DBID" precision="22" scale="0" />
+        </property>
+        <property name="pdbGuid" type="binary">
+            <column name="PDB_GUID" />
+        </property>
+        <property name="pdbCreateScn" type="big_decimal">
+            <column name="PDB_CREATE_SCN" precision="22" scale="0" />
+        </property>
+        <property name="pdbCount" type="big_decimal">
+            <column name="PDB_COUNT" precision="22" scale="0" />
+        </property>
+        <property name="pdbGlobalName" type="string">
+            <column name="PDB_GLOBAL_NAME" length="384" />
+        </property>
+        <property name="fedRootConId#" type="big_decimal">
+            <column name="FED_ROOT_CON_ID#" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

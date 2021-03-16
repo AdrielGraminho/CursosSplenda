@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrcConGg" table="LOGMNRC_CON_GG" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrcConGgId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="con#" type="big_decimal">
+                <column name="CON#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="commitScn" type="big_decimal">
+                <column name="COMMIT_SCN" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="name" type="string">
+            <column name="NAME" length="384" not-null="true" />
+        </property>
+        <property name="dropScn" type="big_decimal">
+            <column name="DROP_SCN" precision="22" scale="0" />
+        </property>
+        <property name="baseobj#" type="big_decimal">
+            <column name="BASEOBJ#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="baseobjv#" type="big_decimal">
+            <column name="BASEOBJV#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="indexobj#" type="big_decimal">
+            <column name="INDEXOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="spare4" type="string">
+            <column name="SPARE4" length="4000" />
+        </property>
+        <property name="spare5" type="string">
+            <column name="SPARE5" length="4000" />
+        </property>
+        <property name="spare6" type="string">
+            <column name="SPARE6" length="4000" />
+        </property>
+    </class>
+</hibernate-mapping>

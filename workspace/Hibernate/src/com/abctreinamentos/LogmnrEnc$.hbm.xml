@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrEnc$" table="LOGMNR_ENC$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrEnc$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="owner#" type="big_decimal">
+                <column name="OWNER#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="encalg" type="big_decimal">
+            <column name="ENCALG" precision="22" scale="0" />
+        </property>
+        <property name="intalg" type="big_decimal">
+            <column name="INTALG" precision="22" scale="0" />
+        </property>
+        <property name="colklc" type="binary">
+            <column name="COLKLC" />
+        </property>
+        <property name="klclen" type="big_decimal">
+            <column name="KLCLEN" precision="22" scale="0" />
+        </property>
+        <property name="flag" type="big_decimal">
+            <column name="FLAG" precision="22" scale="0" />
+        </property>
+        <property name="mkeyid" type="string">
+            <column name="MKEYID" length="192" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

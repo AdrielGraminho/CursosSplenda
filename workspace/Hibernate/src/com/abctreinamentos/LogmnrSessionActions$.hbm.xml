@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrSessionActions$" table="LOGMNR_SESSION_ACTIONS$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrSessionActions$Id">
+            <key-property name="logmnrsession#" type="big_decimal">
+                <column name="LOGMNRSESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="actionname" type="string">
+                <column name="ACTIONNAME" length="30" />
+            </key-property>
+        </composite-id>
+        <property name="flagsruntime" type="big_decimal">
+            <column name="FLAGSRUNTIME" precision="22" scale="0" />
+        </property>
+        <property name="dropscn" type="big_decimal">
+            <column name="DROPSCN" precision="22" scale="0" />
+        </property>
+        <property name="modifytime" type="serializable">
+            <column name="MODIFYTIME" />
+        </property>
+        <property name="dispatchtime" type="serializable">
+            <column name="DISPATCHTIME" />
+        </property>
+        <property name="droptime" type="serializable">
+            <column name="DROPTIME" />
+        </property>
+        <property name="lcrcount" type="big_decimal">
+            <column name="LCRCOUNT" precision="22" scale="0" />
+        </property>
+        <property name="processrole#" type="big_decimal">
+            <column name="PROCESSROLE#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="actiontype#" type="big_decimal">
+            <column name="ACTIONTYPE#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="flagsdefinetime" type="big_decimal">
+            <column name="FLAGSDEFINETIME" precision="22" scale="0" />
+        </property>
+        <property name="createtime" type="serializable">
+            <column name="CREATETIME" />
+        </property>
+        <property name="xidusn" type="big_decimal">
+            <column name="XIDUSN" precision="22" scale="0" />
+        </property>
+        <property name="xidslt" type="big_decimal">
+            <column name="XIDSLT" precision="22" scale="0" />
+        </property>
+        <property name="xidsqn" type="big_decimal">
+            <column name="XIDSQN" precision="22" scale="0" />
+        </property>
+        <property name="thread#" type="big_decimal">
+            <column name="THREAD#" precision="22" scale="0" />
+        </property>
+        <property name="startscn" type="big_decimal">
+            <column name="STARTSCN" precision="22" scale="0" />
+        </property>
+        <property name="startsubscn" type="big_decimal">
+            <column name="STARTSUBSCN" precision="22" scale="0" />
+        </property>
+        <property name="endscn" type="big_decimal">
+            <column name="ENDSCN" precision="22" scale="0" />
+        </property>
+        <property name="endsubscn" type="big_decimal">
+            <column name="ENDSUBSCN" precision="22" scale="0" />
+        </property>
+        <property name="rbasqn" type="big_decimal">
+            <column name="RBASQN" precision="22" scale="0" />
+        </property>
+        <property name="rbablk" type="big_decimal">
+            <column name="RBABLK" precision="22" scale="0" />
+        </property>
+        <property name="rbabyte" type="big_decimal">
+            <column name="RBABYTE" precision="22" scale="0" />
+        </property>
+        <property name="session#" type="big_decimal">
+            <column name="SESSION#" precision="22" scale="0" />
+        </property>
+        <property name="obj#" type="big_decimal">
+            <column name="OBJ#" precision="22" scale="0" />
+        </property>
+        <property name="attr1" type="big_decimal">
+            <column name="ATTR1" precision="22" scale="0" />
+        </property>
+        <property name="attr2" type="big_decimal">
+            <column name="ATTR2" precision="22" scale="0" />
+        </property>
+        <property name="attr3" type="big_decimal">
+            <column name="ATTR3" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="serializable">
+            <column name="SPARE3" />
+        </property>
+        <property name="spare4" type="string">
+            <column name="SPARE4" length="2000" />
+        </property>
+        <property name="pdbid" type="big_decimal">
+            <column name="PDBID" precision="22" scale="0" />
+        </property>
+        <property name="pdbName" type="string">
+            <column name="PDB_NAME" length="390" />
+        </property>
+    </class>
+</hibernate-mapping>

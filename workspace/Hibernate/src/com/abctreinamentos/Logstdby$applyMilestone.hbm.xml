@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$applyMilestone" table="LOGSTDBY$APPLY_MILESTONE" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$applyMilestoneId">
+            <key-property name="sessionId" type="big_decimal">
+                <column name="SESSION_ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="commitScn" type="big_decimal">
+                <column name="COMMIT_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="commitTime" type="date">
+                <column name="COMMIT_TIME" length="7" />
+            </key-property>
+            <key-property name="synchScn" type="big_decimal">
+                <column name="SYNCH_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="epoch" type="big_decimal">
+                <column name="EPOCH" precision="22" scale="0" />
+            </key-property>
+            <key-property name="processedScn" type="big_decimal">
+                <column name="PROCESSED_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="processedTime" type="date">
+                <column name="PROCESSED_TIME" length="7" />
+            </key-property>
+            <key-property name="fetchlwmScn" type="big_decimal">
+                <column name="FETCHLWM_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+            <key-property name="flags" type="big_decimal">
+                <column name="FLAGS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="lwmUpdTime" type="date">
+                <column name="LWM_UPD_TIME" length="7" />
+            </key-property>
+            <key-property name="spare4" type="big_decimal">
+                <column name="SPARE4" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare5" type="big_decimal">
+                <column name="SPARE5" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare6" type="big_decimal">
+                <column name="SPARE6" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare7" type="date">
+                <column name="SPARE7" length="7" />
+            </key-property>
+            <key-property name="ptoRecoveryScn" type="big_decimal">
+                <column name="PTO_RECOVERY_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="ptoRecoveryIncarnation" type="big_decimal">
+                <column name="PTO_RECOVERY_INCARNATION" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

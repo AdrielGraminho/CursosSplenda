@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrContainer$" table="LOGMNR_CONTAINER$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrContainer$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="conId#" type="big_decimal">
+            <column name="CON_ID#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dbid" type="big_decimal">
+            <column name="DBID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="conUid" type="big_decimal">
+            <column name="CON_UID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="createScnwrp" type="big_decimal">
+            <column name="CREATE_SCNWRP" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="createScnbas" type="big_decimal">
+            <column name="CREATE_SCNBAS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="status" type="big_decimal">
+            <column name="STATUS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="vsn" type="big_decimal">
+            <column name="VSN" precision="22" scale="0" />
+        </property>
+        <property name="fedRootConId#" type="big_decimal">
+            <column name="FED_ROOT_CON_ID#" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvBasetable" table="MVIEW$_ADV_BASETABLE" optimistic-lock="version">
+        <comment>Base tables refered by a query</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvBasetableId">
+            <key-property name="collectionid#" type="big_decimal">
+                <column name="COLLECTIONID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="queryid#" type="big_decimal">
+                <column name="QUERYID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column name="TABLE_NAME" length="128" />
+            </key-property>
+            <key-property name="tableType" type="big_decimal">
+                <column name="TABLE_TYPE" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="mview$AdvWorkload" class="com.abctreinamentos.Mview$AdvWorkload" update="false" insert="false" fetch="select">
+            <column name="QUERYID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

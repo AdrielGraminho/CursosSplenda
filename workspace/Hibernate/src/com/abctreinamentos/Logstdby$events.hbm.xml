@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$events" table="LOGSTDBY$EVENTS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$eventsId">
+            <key-property name="eventTime" type="serializable">
+                <column name="EVENT_TIME" />
+            </key-property>
+            <key-property name="currentScn" type="big_decimal">
+                <column name="CURRENT_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="commitScn" type="big_decimal">
+                <column name="COMMIT_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidusn" type="big_decimal">
+                <column name="XIDUSN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidslt" type="big_decimal">
+                <column name="XIDSLT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidsqn" type="big_decimal">
+                <column name="XIDSQN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="errval" type="big_decimal">
+                <column name="ERRVAL" precision="22" scale="0" />
+            </key-property>
+            <key-property name="event" type="string">
+                <column name="EVENT" length="2000" />
+            </key-property>
+            <key-property name="fullEvent" type="clob">
+                <column name="FULL_EVENT" />
+            </key-property>
+            <key-property name="error" type="string">
+                <column name="ERROR" length="2000" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+            <key-property name="conName" type="string">
+                <column name="CON_NAME" length="30" />
+            </key-property>
+            <key-property name="conId" type="big_decimal">
+                <column name="CON_ID" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.MviewLog" table="MVIEW_LOG" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.MviewLogId">
+            <key-property name="id" type="big_decimal">
+                <column name="ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="filterid" type="big_decimal">
+                <column name="FILTERID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="runBegin" type="date">
+                <column name="RUN_BEGIN" length="7" />
+            </key-property>
+            <key-property name="runEnd" type="date">
+                <column name="RUN_END" length="7" />
+            </key-property>
+            <key-property name="type" type="string">
+                <column name="TYPE" length="11" />
+            </key-property>
+            <key-property name="status" type="string">
+                <column name="STATUS" length="11" />
+            </key-property>
+            <key-property name="message" type="string">
+                <column name="MESSAGE" length="2000" />
+            </key-property>
+            <key-property name="completed" type="big_decimal">
+                <column name="COMPLETED" precision="22" scale="0" />
+            </key-property>
+            <key-property name="total" type="big_decimal">
+                <column name="TOTAL" precision="22" scale="0" />
+            </key-property>
+            <key-property name="errorCode" type="string">
+                <column name="ERROR_CODE" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

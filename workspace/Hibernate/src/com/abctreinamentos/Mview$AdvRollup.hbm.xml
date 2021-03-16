@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvRollup" table="MVIEW$_ADV_ROLLUP" optimistic-lock="version">
+        <comment>Each row repesents either a functional dependency or join-key relationship</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvRollupId">
+            <key-property name="runid#" type="big_decimal">
+                <column name="RUNID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="clevelid#" type="big_decimal">
+                <column name="CLEVELID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="plevelid#" type="big_decimal">
+                <column name="PLEVELID#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="mview$AdvLevelByMview$AdvRollupPfk" class="com.abctreinamentos.Mview$AdvLevel" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            <column name="PLEVELID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="mview$AdvLevelByMview$AdvRollupCfk" class="com.abctreinamentos.Mview$AdvLevel" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            <column name="CLEVELID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

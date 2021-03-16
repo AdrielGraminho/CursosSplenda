@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrDictstate$" table="LOGMNR_DICTSTATE$" optimistic-lock="version">
+        <id name="logmnrUid" type="big_decimal">
+            <column name="LOGMNR_UID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="startScnbas" type="big_decimal">
+            <column name="START_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="startScnwrp" type="big_decimal">
+            <column name="START_SCNWRP" precision="22" scale="0" />
+        </property>
+        <property name="endScnbas" type="big_decimal">
+            <column name="END_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="endScnwrp" type="big_decimal">
+            <column name="END_SCNWRP" precision="22" scale="0" />
+        </property>
+        <property name="redoThread" type="big_decimal">
+            <column name="REDO_THREAD" precision="22" scale="0" />
+        </property>
+        <property name="rbasqn" type="big_decimal">
+            <column name="RBASQN" precision="22" scale="0" />
+        </property>
+        <property name="rbablk" type="big_decimal">
+            <column name="RBABLK" precision="22" scale="0" />
+        </property>
+        <property name="rbabyte" type="big_decimal">
+            <column name="RBABYTE" precision="22" scale="0" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

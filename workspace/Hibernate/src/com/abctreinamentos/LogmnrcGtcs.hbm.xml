@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrcGtcs" table="LOGMNRC_GTCS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrcGtcsId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="objv#" type="big_decimal">
+                <column name="OBJV#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="intcol#" type="big_decimal">
+                <column name="INTCOL#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="segcol#" type="big_decimal">
+            <column name="SEGCOL#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="colname" type="string">
+            <column name="COLNAME" length="384" not-null="true" />
+        </property>
+        <property name="type#" type="big_decimal">
+            <column name="TYPE#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="length" type="big_decimal">
+            <column name="LENGTH" precision="22" scale="0" />
+        </property>
+        <property name="precision" type="big_decimal">
+            <column name="PRECISION" precision="22" scale="0" />
+        </property>
+        <property name="scale" type="big_decimal">
+            <column name="SCALE" precision="22" scale="0" />
+        </property>
+        <property name="intervalLeadingPrecision" type="big_decimal">
+            <column name="INTERVAL_LEADING_PRECISION" precision="22" scale="0" />
+        </property>
+        <property name="intervalTrailingPrecision" type="big_decimal">
+            <column name="INTERVAL_TRAILING_PRECISION" precision="22" scale="0" />
+        </property>
+        <property name="property" type="big_decimal">
+            <column name="PROPERTY" precision="22" scale="0" />
+        </property>
+        <property name="toid" type="binary">
+            <column name="TOID" />
+        </property>
+        <property name="charsetid" type="big_decimal">
+            <column name="CHARSETID" precision="22" scale="0" />
+        </property>
+        <property name="charsetform" type="big_decimal">
+            <column name="CHARSETFORM" precision="22" scale="0" />
+        </property>
+        <property name="typename" type="string">
+            <column name="TYPENAME" length="384" />
+        </property>
+        <property name="fqcolname" type="string">
+            <column name="FQCOLNAME" length="4000" />
+        </property>
+        <property name="numintcols" type="big_decimal">
+            <column name="NUMINTCOLS" precision="22" scale="0" />
+        </property>
+        <property name="numattrs" type="big_decimal">
+            <column name="NUMATTRS" precision="22" scale="0" />
+        </property>
+        <property name="adtorder" type="big_decimal">
+            <column name="ADTORDER" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare1" type="big_decimal">
+            <column name="LOGMNR_SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare2" type="big_decimal">
+            <column name="LOGMNR_SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare3" type="string">
+            <column name="LOGMNR_SPARE3" length="1000" />
+        </property>
+        <property name="logmnrSpare4" type="date">
+            <column name="LOGMNR_SPARE4" length="7" />
+        </property>
+        <property name="logmnrSpare5" type="big_decimal">
+            <column name="LOGMNR_SPARE5" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare6" type="big_decimal">
+            <column name="LOGMNR_SPARE6" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare7" type="big_decimal">
+            <column name="LOGMNR_SPARE7" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare8" type="big_decimal">
+            <column name="LOGMNR_SPARE8" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare9" type="big_decimal">
+            <column name="LOGMNR_SPARE9" precision="22" scale="0" />
+        </property>
+        <property name="col#" type="big_decimal">
+            <column name="COL#" precision="22" scale="0" />
+        </property>
+        <property name="xtypeschemaname" type="string">
+            <column name="XTYPESCHEMANAME" length="384" />
+        </property>
+        <property name="xtypename" type="string">
+            <column name="XTYPENAME" length="4000" />
+        </property>
+        <property name="xfqcolname" type="string">
+            <column name="XFQCOLNAME" length="4000" />
+        </property>
+        <property name="xtopintcol" type="big_decimal">
+            <column name="XTOPINTCOL" precision="22" scale="0" />
+        </property>
+        <property name="xreffedtableobjn" type="big_decimal">
+            <column name="XREFFEDTABLEOBJN" precision="22" scale="0" />
+        </property>
+        <property name="xreffedtableobjv" type="big_decimal">
+            <column name="XREFFEDTABLEOBJV" precision="22" scale="0" />
+        </property>
+        <property name="xcoltypeflags" type="big_decimal">
+            <column name="XCOLTYPEFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="xopqtypetype" type="big_decimal">
+            <column name="XOPQTYPETYPE" precision="22" scale="0" />
+        </property>
+        <property name="xopqtypeflags" type="big_decimal">
+            <column name="XOPQTYPEFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="xopqlobintcol" type="big_decimal">
+            <column name="XOPQLOBINTCOL" precision="22" scale="0" />
+        </property>
+        <property name="xopqobjintcol" type="big_decimal">
+            <column name="XOPQOBJINTCOL" precision="22" scale="0" />
+        </property>
+        <property name="xxmlintcol" type="big_decimal">
+            <column name="XXMLINTCOL" precision="22" scale="0" />
+        </property>
+        <property name="eaowner#" type="big_decimal">
+            <column name="EAOWNER#" precision="22" scale="0" />
+        </property>
+        <property name="eamkeyid" type="string">
+            <column name="EAMKEYID" length="192" />
+        </property>
+        <property name="eaencalg" type="big_decimal">
+            <column name="EAENCALG" precision="22" scale="0" />
+        </property>
+        <property name="eaintalg" type="big_decimal">
+            <column name="EAINTALG" precision="22" scale="0" />
+        </property>
+        <property name="eacolklc" type="binary">
+            <column name="EACOLKLC" />
+        </property>
+        <property name="eaklclen" type="big_decimal">
+            <column name="EAKLCLEN" precision="22" scale="0" />
+        </property>
+        <property name="eaflags" type="big_decimal">
+            <column name="EAFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="logmnrderivedflags" type="big_decimal">
+            <column name="LOGMNRDERIVEDFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="collid" type="big_decimal">
+            <column name="COLLID" precision="22" scale="0" />
+        </property>
+        <property name="collintcol#" type="big_decimal">
+            <column name="COLLINTCOL#" precision="22" scale="0" />
+        </property>
+        <property name="acdrrescol#" type="big_decimal">
+            <column name="ACDRRESCOL#" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

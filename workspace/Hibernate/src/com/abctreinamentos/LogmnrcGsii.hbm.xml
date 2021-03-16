@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrcGsii" table="LOGMNRC_GSII" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrcGsiiId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="bo#" type="big_decimal">
+            <column name="BO#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="indtype#" type="big_decimal">
+            <column name="INDTYPE#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dropScn" type="big_decimal">
+            <column name="DROP_SCN" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare1" type="big_decimal">
+            <column name="LOGMNR_SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare2" type="big_decimal">
+            <column name="LOGMNR_SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare3" type="string">
+            <column name="LOGMNR_SPARE3" length="1000" />
+        </property>
+        <property name="logmnrSpare4" type="date">
+            <column name="LOGMNR_SPARE4" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

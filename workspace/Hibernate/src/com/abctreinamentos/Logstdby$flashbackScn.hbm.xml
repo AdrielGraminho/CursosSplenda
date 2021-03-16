@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$flashbackScn" table="LOGSTDBY$FLASHBACK_SCN" optimistic-lock="version">
+        <id name="primaryScn" type="big_decimal">
+            <column name="PRIMARY_SCN" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="primaryTime" type="date">
+            <column name="PRIMARY_TIME" length="7" />
+        </property>
+        <property name="standbyScn" type="big_decimal">
+            <column name="STANDBY_SCN" precision="22" scale="0" />
+        </property>
+        <property name="standbyTime" type="date">
+            <column name="STANDBY_TIME" length="7" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="date">
+            <column name="SPARE3" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

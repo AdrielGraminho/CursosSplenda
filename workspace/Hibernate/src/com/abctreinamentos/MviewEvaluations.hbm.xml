@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.MviewEvaluations" table="MVIEW_EVALUATIONS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.MviewEvaluationsId">
+            <key-property name="runid" type="big_decimal">
+                <column name="RUNID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="mviewOwner" type="string">
+                <column name="MVIEW_OWNER" length="128" />
+            </key-property>
+            <key-property name="mviewName" type="string">
+                <column name="MVIEW_NAME" length="128" />
+            </key-property>
+            <key-property name="rank" type="big_decimal">
+                <column name="RANK" precision="22" scale="0" />
+            </key-property>
+            <key-property name="storageInBytes" type="big_decimal">
+                <column name="STORAGE_IN_BYTES" precision="22" scale="0" />
+            </key-property>
+            <key-property name="frequency" type="big_decimal">
+                <column name="FREQUENCY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="cumulativeBenefit" type="big_decimal">
+                <column name="CUMULATIVE_BENEFIT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="benefitToCostRatio" type="big_decimal">
+                <column name="BENEFIT_TO_COST_RATIO" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvJournal" table="MVIEW$_ADV_JOURNAL">
+        <comment>Summary advisor journal table for debugging and information</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvJournalId">
+            <key-property name="runid#" type="big_decimal">
+                <column name="RUNID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="seq#" type="big_decimal">
+                <column name="SEQ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <version name="timestamp" type="date">
+            <column name="TIMESTAMP" length="7" not-null="true" />
+        </version>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="num" type="big_decimal">
+            <column name="NUM" precision="22" scale="0" />
+        </property>
+        <property name="text" type="string">
+            <column name="TEXT" length="0" />
+        </property>
+        <property name="textlen" type="big_decimal">
+            <column name="TEXTLEN" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

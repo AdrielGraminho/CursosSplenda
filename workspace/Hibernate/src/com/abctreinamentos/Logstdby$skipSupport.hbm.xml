@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$skipSupport" table="LOGSTDBY$SKIP_SUPPORT" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$skipSupportId">
+            <key-property name="action" type="big_decimal">
+                <column name="ACTION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="NAME" length="128" />
+            </key-property>
+            <key-property name="name2" type="string">
+                <column name="NAME2" length="128" />
+            </key-property>
+            <key-property name="name3" type="string">
+                <column name="NAME3" length="128" />
+            </key-property>
+            <key-property name="name4" type="string">
+                <column name="NAME4" length="128" />
+            </key-property>
+            <key-property name="name5" type="string">
+                <column name="NAME5" length="128" />
+            </key-property>
+            <key-property name="reg" type="big_decimal">
+                <column name="REG" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

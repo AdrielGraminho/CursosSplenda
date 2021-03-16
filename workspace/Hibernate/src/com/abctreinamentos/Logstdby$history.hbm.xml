@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$history" table="LOGSTDBY$HISTORY" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$historyId">
+            <key-property name="streamSequence#" type="big_decimal">
+                <column name="STREAM_SEQUENCE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="lmnrSid" type="big_decimal">
+                <column name="LMNR_SID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbid" type="big_decimal">
+                <column name="DBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="firstChange#" type="big_decimal">
+                <column name="FIRST_CHANGE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="lastChange#" type="big_decimal">
+                <column name="LAST_CHANGE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="source" type="big_decimal">
+                <column name="SOURCE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="status" type="big_decimal">
+                <column name="STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="firstTime" type="date">
+                <column name="FIRST_TIME" length="7" />
+            </key-property>
+            <key-property name="lastTime" type="date">
+                <column name="LAST_TIME" length="7" />
+            </key-property>
+            <key-property name="dgname" type="string">
+                <column name="DGNAME" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

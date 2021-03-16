@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvOutput" table="MVIEW$_ADV_OUTPUT" optimistic-lock="version">
+        <comment>Output table for summary recommendations and evaluations</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvOutputId">
+            <key-property name="runid#" type="big_decimal">
+                <column name="RUNID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="rank#" type="big_decimal">
+                <column name="RANK#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" update="false" insert="false" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="outputType" type="big_decimal">
+            <column name="OUTPUT_TYPE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="actionType" type="string">
+            <column name="ACTION_TYPE" length="6" />
+        </property>
+        <property name="summaryOwner" type="string">
+            <column name="SUMMARY_OWNER" length="128" />
+        </property>
+        <property name="summaryName" type="string">
+            <column name="SUMMARY_NAME" length="128" />
+        </property>
+        <property name="groupByColumns" type="string">
+            <column name="GROUP_BY_COLUMNS" length="2000" />
+        </property>
+        <property name="whereClause" type="string">
+            <column name="WHERE_CLAUSE" length="2000" />
+        </property>
+        <property name="fromClause" type="string">
+            <column name="FROM_CLAUSE" length="2000" />
+        </property>
+        <property name="measuresList" type="string">
+            <column name="MEASURES_LIST" length="2000" />
+        </property>
+        <property name="factTables" type="string">
+            <column name="FACT_TABLES" length="1000" />
+        </property>
+        <property name="groupingLevels" type="string">
+            <column name="GROUPING_LEVELS" length="2000" />
+        </property>
+        <property name="querylen" type="big_decimal">
+            <column name="QUERYLEN" precision="22" scale="0" />
+        </property>
+        <property name="queryText" type="string">
+            <column name="QUERY_TEXT" length="0" />
+        </property>
+        <property name="storageInBytes" type="big_decimal">
+            <column name="STORAGE_IN_BYTES" precision="22" scale="0" />
+        </property>
+        <property name="pctPerformanceGain" type="big_decimal">
+            <column name="PCT_PERFORMANCE_GAIN" precision="22" scale="0" />
+        </property>
+        <property name="frequency" type="big_decimal">
+            <column name="FREQUENCY" precision="22" scale="0" />
+        </property>
+        <property name="cumulativeBenefit" type="big_decimal">
+            <column name="CUMULATIVE_BENEFIT" precision="22" scale="0" />
+        </property>
+        <property name="benefitToCostRatio" type="big_decimal">
+            <column name="BENEFIT_TO_COST_RATIO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="validated" type="big_decimal">
+            <column name="VALIDATED" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

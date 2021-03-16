@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvPretty" table="MVIEW$_ADV_PRETTY" optimistic-lock="version">
+        <comment>Table for sql parsing</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvPrettyId">
+            <key-property name="queryid#" type="big_decimal">
+                <column name="QUERYID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sqlText" type="string">
+                <column name="SQL_TEXT" length="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
