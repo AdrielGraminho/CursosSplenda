@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.MviewWorkload" table="MVIEW_WORKLOAD" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.MviewWorkloadId">
+            <key-property name="workloadid" type="big_decimal">
+                <column name="WORKLOADID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="importTime" type="date">
+                <column name="IMPORT_TIME" length="7" />
+            </key-property>
+            <key-property name="queryid" type="big_decimal">
+                <column name="QUERYID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="application" type="string">
+                <column name="APPLICATION" length="128" />
+            </key-property>
+            <key-property name="cardinality" type="big_decimal">
+                <column name="CARDINALITY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resultsize" type="big_decimal">
+                <column name="RESULTSIZE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="lastuse" type="date">
+                <column name="LASTUSE" length="7" />
+            </key-property>
+            <key-property name="frequency" type="big_decimal">
+                <column name="FREQUENCY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="priority" type="big_decimal">
+                <column name="PRIORITY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="query" type="string">
+                <column name="QUERY" length="0" />
+            </key-property>
+            <key-property name="responsetime" type="big_decimal">
+                <column name="RESPONSETIME" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvLog" table="MVIEW$_ADV_LOG" optimistic-lock="version">
+        <comment>Log all calls to summary advisory functions</comment>
+        <id name="runid#" type="big_decimal">
+            <column name="RUNID#" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="filterid#" type="big_decimal">
+            <column name="FILTERID#" precision="22" scale="0" />
+        </property>
+        <property name="runBegin" type="date">
+            <column name="RUN_BEGIN" length="7" />
+        </property>
+        <property name="runEnd" type="date">
+            <column name="RUN_END" length="7" />
+        </property>
+        <property name="runType" type="big_decimal">
+            <column name="RUN_TYPE" precision="22" scale="0" />
+        </property>
+        <property name="uname" type="string">
+            <column name="UNAME" length="128" />
+        </property>
+        <property name="status" type="big_decimal">
+            <column name="STATUS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="message" type="string">
+            <column name="MESSAGE" length="2000" />
+        </property>
+        <property name="completed" type="big_decimal">
+            <column name="COMPLETED" precision="22" scale="0" />
+        </property>
+        <property name="total" type="big_decimal">
+            <column name="TOTAL" precision="22" scale="0" />
+        </property>
+        <property name="errorCode" type="string">
+            <column name="ERROR_CODE" length="20" />
+        </property>
+        <set name="mview$AdvExceptionses" table="MVIEW$_ADV_EXCEPTIONS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvExceptions" />
+        </set>
+        <set name="mview$AdvEligibles" table="MVIEW$_ADV_ELIGIBLE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvEligible" />
+        </set>
+        <set name="mview$AdvOutputs" table="MVIEW$_ADV_OUTPUT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvOutput" />
+        </set>
+        <set name="mview$AdvRollups" table="MVIEW$_ADV_ROLLUP" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvRollup" />
+        </set>
+        <set name="mview$AdvAjgs" table="MVIEW$_ADV_AJG" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvAjg" />
+        </set>
+        <set name="mview$AdvInfos" table="MVIEW$_ADV_INFO" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvInfo" />
+        </set>
+        <set name="mview$AdvCliques" table="MVIEW$_ADV_CLIQUE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvClique" />
+        </set>
+        <set name="mview$AdvFilterinstances" table="MVIEW$_ADV_FILTERINSTANCE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvFilterinstance" />
+        </set>
+        <set name="mview$AdvLevels" table="MVIEW$_ADV_LEVEL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvLevel" />
+        </set>
+        <set name="mview$AdvJournals" table="MVIEW$_ADV_JOURNAL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RUNID#" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.abctreinamentos.Mview$AdvJournal" />
+        </set>
+    </class>
+</hibernate-mapping>

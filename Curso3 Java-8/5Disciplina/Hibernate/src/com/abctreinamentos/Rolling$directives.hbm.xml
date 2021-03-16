@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$directives" table="ROLLING$DIRECTIVES" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$directivesId">
+            <key-property name="directid" type="big_decimal">
+                <column name="DIRECTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="phase" type="big_decimal">
+                <column name="PHASE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="taskid" type="big_decimal">
+                <column name="TASKID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="feature" type="string">
+                <column name="FEATURE" length="32" />
+            </key-property>
+            <key-property name="description" type="string">
+                <column name="DESCRIPTION" length="256" />
+            </key-property>
+            <key-property name="target" type="big_decimal">
+                <column name="TARGET" precision="22" scale="0" />
+            </key-property>
+            <key-property name="flags" type="string">
+                <column name="FLAGS" length="64" />
+            </key-property>
+            <key-property name="opcode" type="big_decimal">
+                <column name="OPCODE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="p1" type="string">
+                <column name="P1" length="256" />
+            </key-property>
+            <key-property name="p2" type="string">
+                <column name="P2" length="256" />
+            </key-property>
+            <key-property name="p3" type="string">
+                <column name="P3" length="256" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="256" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

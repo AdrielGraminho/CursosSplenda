@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrError$" table="LOGMNR_ERROR$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrError$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="timeOfError" type="date">
+                <column name="TIME_OF_ERROR" length="7" />
+            </key-property>
+            <key-property name="code" type="big_decimal">
+                <column name="CODE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="message" type="string">
+                <column name="MESSAGE" length="4000" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="big_decimal">
+                <column name="SPARE3" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare4" type="string">
+                <column name="SPARE4" length="4000" />
+            </key-property>
+            <key-property name="spare5" type="string">
+                <column name="SPARE5" length="4000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrGtTabInclude$" table="LOGMNR_GT_TAB_INCLUDE$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrGtTabInclude$Id">
+            <key-property name="schemaName" type="string">
+                <column name="SCHEMA_NAME" length="390" />
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column name="TABLE_NAME" length="390" />
+            </key-property>
+            <key-property name="pdbName" type="string">
+                <column name="PDB_NAME" length="390" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="4000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrPartobj$" table="LOGMNR_PARTOBJ$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrPartobj$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="parttype" type="big_decimal">
+            <column name="PARTTYPE" precision="22" scale="0" />
+        </property>
+        <property name="partcnt" type="big_decimal">
+            <column name="PARTCNT" precision="22" scale="0" />
+        </property>
+        <property name="partkeycols" type="big_decimal">
+            <column name="PARTKEYCOLS" precision="22" scale="0" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="defts#" type="big_decimal">
+            <column name="DEFTS#" precision="22" scale="0" />
+        </property>
+        <property name="defpctfree" type="big_decimal">
+            <column name="DEFPCTFREE" precision="22" scale="0" />
+        </property>
+        <property name="defpctused" type="big_decimal">
+            <column name="DEFPCTUSED" precision="22" scale="0" />
+        </property>
+        <property name="defpctthres" type="big_decimal">
+            <column name="DEFPCTTHRES" precision="22" scale="0" />
+        </property>
+        <property name="definitrans" type="big_decimal">
+            <column name="DEFINITRANS" precision="22" scale="0" />
+        </property>
+        <property name="defmaxtrans" type="big_decimal">
+            <column name="DEFMAXTRANS" precision="22" scale="0" />
+        </property>
+        <property name="deftiniexts" type="big_decimal">
+            <column name="DEFTINIEXTS" precision="22" scale="0" />
+        </property>
+        <property name="defextsize" type="big_decimal">
+            <column name="DEFEXTSIZE" precision="22" scale="0" />
+        </property>
+        <property name="defminexts" type="big_decimal">
+            <column name="DEFMINEXTS" precision="22" scale="0" />
+        </property>
+        <property name="defmaxexts" type="big_decimal">
+            <column name="DEFMAXEXTS" precision="22" scale="0" />
+        </property>
+        <property name="defextpct" type="big_decimal">
+            <column name="DEFEXTPCT" precision="22" scale="0" />
+        </property>
+        <property name="deflists" type="big_decimal">
+            <column name="DEFLISTS" precision="22" scale="0" />
+        </property>
+        <property name="defgroups" type="big_decimal">
+            <column name="DEFGROUPS" precision="22" scale="0" />
+        </property>
+        <property name="deflogging" type="big_decimal">
+            <column name="DEFLOGGING" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="definclcol" type="big_decimal">
+            <column name="DEFINCLCOL" precision="22" scale="0" />
+        </property>
+        <property name="parameters" type="string">
+            <column name="PARAMETERS" length="3000" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

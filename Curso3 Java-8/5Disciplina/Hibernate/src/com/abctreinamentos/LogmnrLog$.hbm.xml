@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrLog$" table="LOGMNR_LOG$">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrLog$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="thread#" type="big_decimal">
+                <column name="THREAD#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sequence#" type="big_decimal">
+                <column name="SEQUENCE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="firstChange#" type="big_decimal">
+                <column name="FIRST_CHANGE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbId" type="big_decimal">
+                <column name="DB_ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetlogsChange#" type="big_decimal">
+                <column name="RESETLOGS_CHANGE#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetTimestamp" type="big_decimal">
+                <column name="RESET_TIMESTAMP" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <version name="timestamp" type="date">
+            <column name="TIMESTAMP" length="7" />
+        </version>
+        <property name="nextChange#" type="big_decimal">
+            <column name="NEXT_CHANGE#" precision="22" scale="0" />
+        </property>
+        <property name="firstTime" type="date">
+            <column name="FIRST_TIME" length="7" />
+        </property>
+        <property name="nextTime" type="date">
+            <column name="NEXT_TIME" length="7" />
+        </property>
+        <property name="fileName" type="string">
+            <column name="FILE_NAME" length="513" />
+        </property>
+        <property name="status" type="big_decimal">
+            <column name="STATUS" precision="22" scale="0" />
+        </property>
+        <property name="info" type="string">
+            <column name="INFO" length="32" />
+        </property>
+        <property name="dictBegin" type="string">
+            <column name="DICT_BEGIN" length="3" />
+        </property>
+        <property name="dictEnd" type="string">
+            <column name="DICT_END" length="3" />
+        </property>
+        <property name="statusInfo" type="string">
+            <column name="STATUS_INFO" length="32" />
+        </property>
+        <property name="prevResetlogsChange#" type="big_decimal">
+            <column name="PREV_RESETLOGS_CHANGE#" precision="22" scale="0" />
+        </property>
+        <property name="prevResetTimestamp" type="big_decimal">
+            <column name="PREV_RESET_TIMESTAMP" precision="22" scale="0" />
+        </property>
+        <property name="blocks" type="big_decimal">
+            <column name="BLOCKS" precision="22" scale="0" />
+        </property>
+        <property name="blockSize" type="big_decimal">
+            <column name="BLOCK_SIZE" precision="22" scale="0" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="contents" type="big_decimal">
+            <column name="CONTENTS" precision="22" scale="0" />
+        </property>
+        <property name="recid" type="big_decimal">
+            <column name="RECID" precision="22" scale="0" />
+        </property>
+        <property name="recstamp" type="big_decimal">
+            <column name="RECSTAMP" precision="22" scale="0" />
+        </property>
+        <property name="markDeleteTimestamp" type="big_decimal">
+            <column name="MARK_DELETE_TIMESTAMP" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="spare4" type="big_decimal">
+            <column name="SPARE4" precision="22" scale="0" />
+        </property>
+        <property name="spare5" type="big_decimal">
+            <column name="SPARE5" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

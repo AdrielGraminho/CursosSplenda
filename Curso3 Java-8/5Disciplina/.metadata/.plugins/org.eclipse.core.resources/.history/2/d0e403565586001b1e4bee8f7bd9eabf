@@ -1,0 +1,8 @@
+package com.abctreinamentos;
+
+public class ClienteApp {
+
+	public ClienteApp() {
+		// TODO Auto-generated constructor stub
+	}
+}

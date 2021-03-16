@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Help" table="HELP" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.HelpId">
+            <key-property name="topic" type="string">
+                <column name="TOPIC" length="50" />
+            </key-property>
+            <key-property name="seq" type="big_decimal">
+                <column name="SEQ" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="info" type="string">
+            <column name="INFO" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

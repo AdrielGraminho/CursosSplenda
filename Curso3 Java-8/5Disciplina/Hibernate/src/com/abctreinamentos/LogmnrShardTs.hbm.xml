@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrShardTs" table="LOGMNR_SHARD_TS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrShardTsId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="tablespaceName" type="string">
+                <column name="TABLESPACE_NAME" length="90" />
+            </key-property>
+        </composite-id>
+        <property name="chunkNumber" type="big_decimal">
+            <column name="CHUNK_NUMBER" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="startScnbas" type="big_decimal">
+            <column name="START_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="startScnwrp" type="big_decimal">
+            <column name="START_SCNWRP" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

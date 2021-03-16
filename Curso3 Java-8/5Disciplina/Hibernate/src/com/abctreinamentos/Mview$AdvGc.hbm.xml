@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvGc" table="MVIEW$_ADV_GC" optimistic-lock="version">
+        <comment>Group-by columns of a query</comment>
+        <id name="gcid#" type="big_decimal">
+            <column name="GCID#" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="mview$AdvFjg" class="com.abctreinamentos.Mview$AdvFjg" fetch="select">
+            <column name="FJGID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="gcdeslen" type="big_decimal">
+            <column name="GCDESLEN" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="gcdes" type="binary">
+            <column name="GCDES" not-null="true" />
+        </property>
+        <property name="hashvalue" type="big_decimal">
+            <column name="HASHVALUE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="frequency" type="big_decimal">
+            <column name="FREQUENCY" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

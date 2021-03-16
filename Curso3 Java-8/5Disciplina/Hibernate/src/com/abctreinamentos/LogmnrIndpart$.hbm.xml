@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrIndpart$" table="LOGMNR_INDPART$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrIndpart$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="bo#" type="big_decimal">
+                <column name="BO#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="part#" type="big_decimal">
+            <column name="PART#" precision="22" scale="0" />
+        </property>
+        <property name="ts#" type="big_decimal">
+            <column name="TS#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrRestartCkptTxinfo$" table="LOGMNR_RESTART_CKPT_TXINFO$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrRestartCkptTxinfo$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidusn" type="big_decimal">
+                <column name="XIDUSN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidslt" type="big_decimal">
+                <column name="XIDSLT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidsqn" type="big_decimal">
+                <column name="XIDSQN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sessionNum" type="big_decimal">
+                <column name="SESSION_NUM" precision="22" scale="0" />
+            </key-property>
+            <key-property name="serialNum" type="big_decimal">
+                <column name="SERIAL_NUM" precision="22" scale="0" />
+            </key-property>
+            <key-property name="effectiveScn" type="big_decimal">
+                <column name="EFFECTIVE_SCN" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="flag" type="big_decimal">
+            <column name="FLAG" precision="22" scale="0" />
+        </property>
+        <property name="startScn" type="big_decimal">
+            <column name="START_SCN" precision="22" scale="0" />
+        </property>
+        <property name="offset" type="big_decimal">
+            <column name="OFFSET" precision="22" scale="0" />
+        </property>
+        <property name="txData" type="blob">
+            <column name="TX_DATA" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrcGsba" table="LOGMNRC_GSBA" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrcGsbaId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="asOfScn" type="big_decimal">
+                <column name="AS_OF_SCN" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="fdoLength" type="big_decimal">
+            <column name="FDO_LENGTH" precision="22" scale="0" />
+        </property>
+        <property name="fdoValue" type="binary">
+            <column name="FDO_VALUE" />
+        </property>
+        <property name="charsetid" type="big_decimal">
+            <column name="CHARSETID" precision="22" scale="0" />
+        </property>
+        <property name="ncharsetid" type="big_decimal">
+            <column name="NCHARSETID" precision="22" scale="0" />
+        </property>
+        <property name="dbtimezoneLen" type="big_decimal">
+            <column name="DBTIMEZONE_LEN" precision="22" scale="0" />
+        </property>
+        <property name="dbtimezoneValue" type="string">
+            <column name="DBTIMEZONE_VALUE" length="192" />
+        </property>
+        <property name="logmnrSpare1" type="big_decimal">
+            <column name="LOGMNR_SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare2" type="big_decimal">
+            <column name="LOGMNR_SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare3" type="string">
+            <column name="LOGMNR_SPARE3" length="1000" />
+        </property>
+        <property name="logmnrSpare4" type="date">
+            <column name="LOGMNR_SPARE4" length="7" />
+        </property>
+        <property name="dbGlobalName" type="string">
+            <column name="DB_GLOBAL_NAME" length="384" />
+        </property>
+    </class>
+</hibernate-mapping>

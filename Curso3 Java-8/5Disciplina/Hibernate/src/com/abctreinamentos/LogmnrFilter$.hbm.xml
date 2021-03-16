@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrFilter$" table="LOGMNR_FILTER$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrFilter$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="filterType" type="string">
+                <column name="FILTER_TYPE" length="30" />
+            </key-property>
+            <key-property name="attr1" type="big_decimal">
+                <column name="ATTR1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attr2" type="big_decimal">
+                <column name="ATTR2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attr3" type="big_decimal">
+                <column name="ATTR3" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attr4" type="big_decimal">
+                <column name="ATTR4" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attr5" type="big_decimal">
+                <column name="ATTR5" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attr6" type="big_decimal">
+                <column name="ATTR6" precision="22" scale="0" />
+            </key-property>
+            <key-property name="filterScn" type="big_decimal">
+                <column name="FILTER_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="date">
+                <column name="SPARE3" length="7" />
+            </key-property>
+            <key-property name="attr7" type="string">
+                <column name="ATTR7" length="128" />
+            </key-property>
+            <key-property name="attr8" type="string">
+                <column name="ATTR8" length="128" />
+            </key-property>
+            <key-property name="attr9" type="string">
+                <column name="ATTR9" length="128" />
+            </key-property>
+            <key-property name="attr10" type="string">
+                <column name="ATTR10" length="128" />
+            </key-property>
+            <key-property name="attr11" type="string">
+                <column name="ATTR11" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

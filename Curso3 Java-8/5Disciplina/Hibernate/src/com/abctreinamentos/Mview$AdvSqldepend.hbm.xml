@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvSqldepend" table="MVIEW$_ADV_SQLDEPEND" optimistic-lock="version">
+        <comment>Temporary table for workload collections</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvSqldependId">
+            <key-property name="collectionid#" type="big_decimal">
+                <column name="COLLECTIONID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="instId" type="big_decimal">
+                <column name="INST_ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="fromAddress" type="binary">
+                <column name="FROM_ADDRESS" />
+            </key-property>
+            <key-property name="fromHash" type="big_decimal">
+                <column name="FROM_HASH" precision="22" scale="0" />
+            </key-property>
+            <key-property name="toOwner" type="string">
+                <column name="TO_OWNER" length="128" />
+            </key-property>
+            <key-property name="toName" type="string">
+                <column name="TO_NAME" length="1000" />
+            </key-property>
+            <key-property name="toType" type="big_decimal">
+                <column name="TO_TYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="cardinality" type="big_decimal">
+                <column name="CARDINALITY" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

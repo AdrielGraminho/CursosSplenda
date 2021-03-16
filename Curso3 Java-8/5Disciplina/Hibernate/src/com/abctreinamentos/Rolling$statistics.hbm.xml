@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$statistics" table="ROLLING$STATISTICS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$statisticsId">
+            <key-property name="statid" type="big_decimal">
+                <column name="STATID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="rdbid" type="big_decimal">
+                <column name="RDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attributes" type="big_decimal">
+                <column name="ATTRIBUTES" precision="22" scale="0" />
+            </key-property>
+            <key-property name="type" type="big_decimal">
+                <column name="TYPE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="NAME" length="256" />
+            </key-property>
+            <key-property name="valuestr" type="string">
+                <column name="VALUESTR" length="256" />
+            </key-property>
+            <key-property name="valuenum" type="big_decimal">
+                <column name="VALUENUM" precision="22" scale="0" />
+            </key-property>
+            <key-property name="valuets" type="serializable">
+                <column name="VALUETS" />
+            </key-property>
+            <key-property name="valueint" type="serializable">
+                <column name="VALUEINT" />
+            </key-property>
+            <key-property name="updateTime" type="serializable">
+                <column name="UPDATE_TIME" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

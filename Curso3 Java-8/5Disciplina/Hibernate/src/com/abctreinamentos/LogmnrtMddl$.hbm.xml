@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrtMddl$" table="LOGMNRT_MDDL$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrtMddl$Id">
+            <key-property name="sourceObj#" type="big_decimal">
+                <column name="SOURCE_OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sourceRowid" type="serializable">
+                <column name="SOURCE_ROWID" />
+            </key-property>
+        </composite-id>
+        <property name="destRowid" type="serializable">
+            <column name="DEST_ROWID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

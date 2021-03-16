@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.ProductPrivs" table="PRODUCT_PRIVS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.ProductPrivsId">
+            <key-property name="product" type="string">
+                <column name="PRODUCT" length="30" />
+            </key-property>
+            <key-property name="userid" type="string">
+                <column name="USERID" length="128" />
+            </key-property>
+            <key-property name="attribute" type="string">
+                <column name="ATTRIBUTE" length="240" />
+            </key-property>
+            <key-property name="scope" type="string">
+                <column name="SCOPE" length="240" />
+            </key-property>
+            <key-property name="numericValue" type="big_decimal">
+                <column name="NUMERIC_VALUE" precision="15" />
+            </key-property>
+            <key-property name="charValue" type="string">
+                <column name="CHAR_VALUE" length="240" />
+            </key-property>
+            <key-property name="dateValue" type="date">
+                <column name="DATE_VALUE" length="7" />
+            </key-property>
+            <key-property name="longValue" type="string">
+                <column name="LONG_VALUE" length="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

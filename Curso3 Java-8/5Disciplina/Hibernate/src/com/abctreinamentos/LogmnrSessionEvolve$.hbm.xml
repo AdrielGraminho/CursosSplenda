@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrSessionEvolve$" table="LOGMNR_SESSION_EVOLVE$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrSessionEvolve$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbId" type="big_decimal">
+                <column name="DB_ID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetScn" type="big_decimal">
+                <column name="RESET_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="resetTimestamp" type="big_decimal">
+                <column name="RESET_TIMESTAMP" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="branchLevel" type="big_decimal">
+            <column name="BRANCH_LEVEL" precision="22" scale="0" />
+        </property>
+        <property name="prevResetScn" type="big_decimal">
+            <column name="PREV_RESET_SCN" precision="22" scale="0" />
+        </property>
+        <property name="prevResetTimestamp" type="big_decimal">
+            <column name="PREV_RESET_TIMESTAMP" precision="22" scale="0" />
+        </property>
+        <property name="status" type="big_decimal">
+            <column name="STATUS" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="spare4" type="date">
+            <column name="SPARE4" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

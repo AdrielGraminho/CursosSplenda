@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrAttribute$" table="LOGMNR_ATTRIBUTE$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrAttribute$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="toid" type="binary">
+                <column name="TOID" />
+            </key-property>
+            <key-property name="version#" type="big_decimal">
+                <column name="VERSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attribute#" type="big_decimal">
+                <column name="ATTRIBUTE#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="name" type="string">
+            <column name="NAME" length="384" />
+        </property>
+        <property name="attrToid" type="binary">
+            <column name="ATTR_TOID" />
+        </property>
+        <property name="attrVersion#" type="big_decimal">
+            <column name="ATTR_VERSION#" precision="22" scale="0" />
+        </property>
+        <property name="synobj#" type="big_decimal">
+            <column name="SYNOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="properties" type="big_decimal">
+            <column name="PROPERTIES" precision="22" scale="0" />
+        </property>
+        <property name="charsetid" type="big_decimal">
+            <column name="CHARSETID" precision="22" scale="0" />
+        </property>
+        <property name="charsetform" type="big_decimal">
+            <column name="CHARSETFORM" precision="22" scale="0" />
+        </property>
+        <property name="length" type="big_decimal">
+            <column name="LENGTH" precision="22" scale="0" />
+        </property>
+        <property name="precision#" type="big_decimal">
+            <column name="PRECISION#" precision="22" scale="0" />
+        </property>
+        <property name="scale" type="big_decimal">
+            <column name="SCALE" precision="22" scale="0" />
+        </property>
+        <property name="externname" type="string">
+            <column name="EXTERNNAME" length="4000" />
+        </property>
+        <property name="xflags" type="big_decimal">
+            <column name="XFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="spare4" type="big_decimal">
+            <column name="SPARE4" precision="22" scale="0" />
+        </property>
+        <property name="spare5" type="big_decimal">
+            <column name="SPARE5" precision="22" scale="0" />
+        </property>
+        <property name="setter" type="big_decimal">
+            <column name="SETTER" precision="22" scale="0" />
+        </property>
+        <property name="getter" type="big_decimal">
+            <column name="GETTER" precision="22" scale="0" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

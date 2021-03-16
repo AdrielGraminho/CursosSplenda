@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Aq$QueueTables" table="AQ$_QUEUE_TABLES" optimistic-lock="version">
+        <id name="objno" type="big_decimal">
+            <column name="OBJNO" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="schema" type="string">
+            <column name="SCHEMA" length="128" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="128" not-null="true" />
+        </property>
+        <property name="udataType" type="big_decimal">
+            <column name="UDATA_TYPE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="sortCols" type="big_decimal">
+            <column name="SORT_COLS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="timezone" type="string">
+            <column name="TIMEZONE" length="64" />
+        </property>
+        <property name="tableComment" type="string">
+            <column name="TABLE_COMMENT" length="2000" />
+        </property>
+    </class>
+</hibernate-mapping>

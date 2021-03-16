@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$status" table="ROLLING$STATUS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$statusId">
+            <key-property name="revision" type="big_decimal">
+                <column name="REVISION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="phase" type="big_decimal">
+                <column name="PHASE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="batchid" type="big_decimal">
+                <column name="BATCHID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="status" type="big_decimal">
+                <column name="STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="coordid" type="big_decimal">
+                <column name="COORDID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="oprimary" type="big_decimal">
+                <column name="OPRIMARY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="fprimary" type="big_decimal">
+                <column name="FPRIMARY" precision="22" scale="0" />
+            </key-property>
+            <key-property name="pid" type="big_decimal">
+                <column name="PID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="instance" type="big_decimal">
+                <column name="INSTANCE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbtotal" type="big_decimal">
+                <column name="DBTOTAL" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbactive" type="big_decimal">
+                <column name="DBACTIVE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="location" type="string">
+                <column name="LOCATION" length="128" />
+            </key-property>
+            <key-property name="initTime" type="serializable">
+                <column name="INIT_TIME" />
+            </key-property>
+            <key-property name="buildTime" type="serializable">
+                <column name="BUILD_TIME" />
+            </key-property>
+            <key-property name="startTime" type="serializable">
+                <column name="START_TIME" />
+            </key-property>
+            <key-property name="switchTime" type="serializable">
+                <column name="SWITCH_TIME" />
+            </key-property>
+            <key-property name="finishTime" type="serializable">
+                <column name="FINISH_TIME" />
+            </key-property>
+            <key-property name="lastInstid" type="big_decimal">
+                <column name="LAST_INSTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="lastBatchid" type="big_decimal">
+                <column name="LAST_BATCHID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvClique" table="MVIEW$_ADV_CLIQUE" optimistic-lock="version">
+        <comment>Table for storing canonical form of Clique queries</comment>
+        <id name="cliqueid#" type="big_decimal">
+            <column name="CLIQUEID#" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="mview$AdvLog" class="com.abctreinamentos.Mview$AdvLog" fetch="select">
+            <column name="RUNID#" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="cliquedeslen" type="big_decimal">
+            <column name="CLIQUEDESLEN" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="cliquedes" type="binary">
+            <column name="CLIQUEDES" not-null="true" />
+        </property>
+        <property name="hashvalue" type="big_decimal">
+            <column name="HASHVALUE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="frequency" type="big_decimal">
+            <column name="FREQUENCY" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="bytecost" type="big_decimal">
+            <column name="BYTECOST" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rowsize" type="big_decimal">
+            <column name="ROWSIZE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="numrows" type="big_decimal">
+            <column name="NUMROWS" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

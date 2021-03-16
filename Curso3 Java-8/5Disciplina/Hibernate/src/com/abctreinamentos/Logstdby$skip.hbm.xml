@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$skip" table="LOGSTDBY$SKIP" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$skipId">
+            <key-property name="error" type="big_decimal">
+                <column name="ERROR" precision="22" scale="0" />
+            </key-property>
+            <key-property name="statementOpt" type="string">
+                <column name="STATEMENT_OPT" length="128" />
+            </key-property>
+            <key-property name="schema" type="string">
+                <column name="SCHEMA" length="128" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="NAME" length="261" />
+            </key-property>
+            <key-property name="useLike" type="big_decimal">
+                <column name="USE_LIKE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="esc" type="string">
+                <column name="ESC" length="1" />
+            </key-property>
+            <key-property name="proc" type="string">
+                <column name="PROC" length="392" />
+            </key-property>
+            <key-property name="active" type="big_decimal">
+                <column name="ACTIVE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

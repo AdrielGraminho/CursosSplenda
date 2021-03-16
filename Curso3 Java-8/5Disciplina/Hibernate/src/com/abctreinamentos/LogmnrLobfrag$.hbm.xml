@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrLobfrag$" table="LOGMNR_LOBFRAG$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrLobfrag$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="fragobj#" type="big_decimal">
+                <column name="FRAGOBJ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="parentobj#" type="big_decimal">
+            <column name="PARENTOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="tabfragobj#" type="big_decimal">
+            <column name="TABFRAGOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="indfragobj#" type="big_decimal">
+            <column name="INDFRAGOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="frag#" type="big_decimal">
+            <column name="FRAG#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

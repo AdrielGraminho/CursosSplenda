@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrSeed$" table="LOGMNR_SEED$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrSeed$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="intcol#" type="big_decimal">
+                <column name="INTCOL#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="seedVersion" type="big_decimal">
+            <column name="SEED_VERSION" precision="22" scale="0" />
+        </property>
+        <property name="gatherVersion" type="big_decimal">
+            <column name="GATHER_VERSION" precision="22" scale="0" />
+        </property>
+        <property name="schemaname" type="string">
+            <column name="SCHEMANAME" length="384" />
+        </property>
+        <property name="objv#" type="big_decimal">
+            <column name="OBJV#" precision="22" scale="0" />
+        </property>
+        <property name="tableName" type="string">
+            <column name="TABLE_NAME" length="384" />
+        </property>
+        <property name="colName" type="string">
+            <column name="COL_NAME" length="384" />
+        </property>
+        <property name="col#" type="big_decimal">
+            <column name="COL#" precision="22" scale="0" />
+        </property>
+        <property name="segcol#" type="big_decimal">
+            <column name="SEGCOL#" precision="22" scale="0" />
+        </property>
+        <property name="type#" type="big_decimal">
+            <column name="TYPE#" precision="22" scale="0" />
+        </property>
+        <property name="length" type="big_decimal">
+            <column name="LENGTH" precision="22" scale="0" />
+        </property>
+        <property name="precision#" type="big_decimal">
+            <column name="PRECISION#" precision="22" scale="0" />
+        </property>
+        <property name="scale" type="big_decimal">
+            <column name="SCALE" precision="22" scale="0" />
+        </property>
+        <property name="null$" type="big_decimal">
+            <column name="NULL$" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

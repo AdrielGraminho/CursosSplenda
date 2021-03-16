@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrTs$" table="LOGMNR_TS$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrTs$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="ts#" type="big_decimal">
+                <column name="TS#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="name" type="string">
+            <column name="NAME" length="90" />
+        </property>
+        <property name="owner#" type="big_decimal">
+            <column name="OWNER#" precision="22" scale="0" />
+        </property>
+        <property name="blocksize" type="big_decimal">
+            <column name="BLOCKSIZE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="startScnbas" type="big_decimal">
+            <column name="START_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="startScnwrp" type="big_decimal">
+            <column name="START_SCNWRP" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

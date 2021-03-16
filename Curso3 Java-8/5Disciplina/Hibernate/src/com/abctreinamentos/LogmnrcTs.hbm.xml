@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrcTs" table="LOGMNRC_TS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrcTsId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="ts#" type="big_decimal">
+                <column name="TS#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="startScn" type="big_decimal">
+                <column name="START_SCN" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="name" type="string">
+            <column name="NAME" length="90" />
+        </property>
+        <property name="dropScn" type="big_decimal">
+            <column name="DROP_SCN" precision="22" scale="0" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="string">
+            <column name="SPARE3" length="4000" />
+        </property>
+    </class>
+</hibernate-mapping>

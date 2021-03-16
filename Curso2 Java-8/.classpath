@@ -3,5 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="miglayout15-swing.jar" sourcepath="miglayout-src.zip"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="lib" path="C:/Users/adriel.graminho/Downloads/ojdbc8.jar"/>
+>>>>>>> dce80c1d07a056dedcbdb24b5d712aacd1c4bafc
 	<classpathentry kind="output" path="bin"/>
 </classpath>

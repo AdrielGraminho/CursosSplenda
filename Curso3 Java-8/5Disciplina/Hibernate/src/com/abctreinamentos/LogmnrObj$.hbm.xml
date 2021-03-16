@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrObj$" table="LOGMNR_OBJ$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrObj$Id">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="obj#" type="big_decimal">
+                <column name="OBJ#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="objv#" type="big_decimal">
+            <column name="OBJV#" precision="22" scale="0" />
+        </property>
+        <property name="owner#" type="big_decimal">
+            <column name="OWNER#" precision="22" scale="0" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="384" />
+        </property>
+        <property name="namespace" type="big_decimal">
+            <column name="NAMESPACE" precision="22" scale="0" />
+        </property>
+        <property name="subname" type="string">
+            <column name="SUBNAME" length="384" />
+        </property>
+        <property name="type#" type="big_decimal">
+            <column name="TYPE#" precision="22" scale="0" />
+        </property>
+        <property name="oid$" type="binary">
+            <column name="OID$" />
+        </property>
+        <property name="remoteowner" type="string">
+            <column name="REMOTEOWNER" length="384" />
+        </property>
+        <property name="linkname" type="string">
+            <column name="LINKNAME" length="384" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="stime" type="date">
+            <column name="STIME" length="7" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="startScnbas" type="big_decimal">
+            <column name="START_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="startScnwrp" type="big_decimal">
+            <column name="START_SCNWRP" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

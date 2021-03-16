@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$databases" table="ROLLING$DATABASES" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$databasesId">
+            <key-property name="rdbid" type="big_decimal">
+                <column name="RDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attributes" type="big_decimal">
+                <column name="ATTRIBUTES" precision="22" scale="0" />
+            </key-property>
+            <key-property name="attributes2" type="big_decimal">
+                <column name="ATTRIBUTES2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="dbun" type="string">
+                <column name="DBUN" length="128" />
+            </key-property>
+            <key-property name="dbid" type="big_decimal">
+                <column name="DBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="prodRscn" type="big_decimal">
+                <column name="PROD_RSCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="prodRid" type="big_decimal">
+                <column name="PROD_RID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="prodScn" type="big_decimal">
+                <column name="PROD_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="consRscn" type="big_decimal">
+                <column name="CONS_RSCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="consRid" type="big_decimal">
+                <column name="CONS_RID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="consScn" type="big_decimal">
+                <column name="CONS_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="engineStatus" type="big_decimal">
+                <column name="ENGINE_STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="version" type="string">
+                <column name="VERSION" length="128" />
+            </key-property>
+            <key-property name="redoSource" type="big_decimal">
+                <column name="REDO_SOURCE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="updateTime" type="serializable">
+                <column name="UPDATE_TIME" />
+            </key-property>
+            <key-property name="revision" type="big_decimal">
+                <column name="REVISION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

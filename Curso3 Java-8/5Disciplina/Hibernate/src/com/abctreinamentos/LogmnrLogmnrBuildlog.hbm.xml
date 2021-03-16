@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrLogmnrBuildlog" table="LOGMNR_LOGMNR_BUILDLOG" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrLogmnrBuildlogId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="initialXid" type="string">
+                <column name="INITIAL_XID" length="22" />
+            </key-property>
+        </composite-id>
+        <property name="buildDate" type="string">
+            <column name="BUILD_DATE" length="20" />
+        </property>
+        <property name="dbTxnScnbas" type="big_decimal">
+            <column name="DB_TXN_SCNBAS" precision="22" scale="0" />
+        </property>
+        <property name="dbTxnScnwrp" type="big_decimal">
+            <column name="DB_TXN_SCNWRP" precision="22" scale="0" />
+        </property>
+        <property name="currentBuildState" type="big_decimal">
+            <column name="CURRENT_BUILD_STATE" precision="22" scale="0" />
+        </property>
+        <property name="completionStatus" type="big_decimal">
+            <column name="COMPLETION_STATUS" precision="22" scale="0" />
+        </property>
+        <property name="markedLogFileLowScn" type="big_decimal">
+            <column name="MARKED_LOG_FILE_LOW_SCN" precision="22" scale="0" />
+        </property>
+        <property name="logmnrFlags" type="big_decimal">
+            <column name="LOGMNR_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="cdbXid" type="string">
+            <column name="CDB_XID" length="22" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="string">
+            <column name="SPARE2" length="4000" />
+        </property>
+    </class>
+</hibernate-mapping>

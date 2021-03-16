@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrSession$" table="LOGMNR_SESSION$">
+        <id name="session#" type="big_decimal">
+            <column name="SESSION#" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <version name="version" type="string">
+            <column name="VERSION" length="64" />
+        </version>
+        <property name="client#" type="big_decimal">
+            <column name="CLIENT#" precision="22" scale="0" />
+        </property>
+        <property name="sessionName" type="string">
+            <column name="SESSION_NAME" length="128" not-null="true" unique="true" />
+        </property>
+        <property name="dbId" type="big_decimal">
+            <column name="DB_ID" precision="22" scale="0" />
+        </property>
+        <property name="resetlogsChange#" type="big_decimal">
+            <column name="RESETLOGS_CHANGE#" precision="22" scale="0" />
+        </property>
+        <property name="sessionAttr" type="big_decimal">
+            <column name="SESSION_ATTR" precision="22" scale="0" />
+        </property>
+        <property name="sessionAttrVerbose" type="string">
+            <column name="SESSION_ATTR_VERBOSE" length="400" />
+        </property>
+        <property name="startScn" type="big_decimal">
+            <column name="START_SCN" precision="22" scale="0" />
+        </property>
+        <property name="endScn" type="big_decimal">
+            <column name="END_SCN" precision="22" scale="0" />
+        </property>
+        <property name="spillScn" type="big_decimal">
+            <column name="SPILL_SCN" precision="22" scale="0" />
+        </property>
+        <property name="spillTime" type="date">
+            <column name="SPILL_TIME" length="7" />
+        </property>
+        <property name="oldestScn" type="big_decimal">
+            <column name="OLDEST_SCN" precision="22" scale="0" />
+        </property>
+        <property name="resumeScn" type="big_decimal">
+            <column name="RESUME_SCN" precision="22" scale="0" />
+        </property>
+        <property name="globalDbName" type="string">
+            <column name="GLOBAL_DB_NAME" length="384" />
+        </property>
+        <property name="resetTimestamp" type="big_decimal">
+            <column name="RESET_TIMESTAMP" precision="22" scale="0" />
+        </property>
+        <property name="branchScn" type="big_decimal">
+            <column name="BRANCH_SCN" precision="22" scale="0" />
+        </property>
+        <property name="redoCompat" type="string">
+            <column name="REDO_COMPAT" length="20" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="purgeScn" type="big_decimal">
+            <column name="PURGE_SCN" precision="22" scale="0" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="spare4" type="big_decimal">
+            <column name="SPARE4" precision="22" scale="0" />
+        </property>
+        <property name="spare5" type="big_decimal">
+            <column name="SPARE5" precision="22" scale="0" />
+        </property>
+        <property name="spare6" type="date">
+            <column name="SPARE6" length="7" />
+        </property>
+        <property name="spare7" type="string">
+            <column name="SPARE7" length="1000" />
+        </property>
+        <property name="spare8" type="string">
+            <column name="SPARE8" length="1000" />
+        </property>
+        <property name="spare9" type="big_decimal">
+            <column name="SPARE9" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

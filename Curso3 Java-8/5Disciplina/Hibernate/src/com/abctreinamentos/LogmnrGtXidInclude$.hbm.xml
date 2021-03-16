@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrGtXidInclude$" table="LOGMNR_GT_XID_INCLUDE$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrGtXidInclude$Id">
+            <key-property name="xidusn" type="big_decimal">
+                <column name="XIDUSN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidslt" type="big_decimal">
+                <column name="XIDSLT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidsqn" type="big_decimal">
+                <column name="XIDSQN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="4000" />
+            </key-property>
+            <key-property name="pdbid" type="big_decimal">
+                <column name="PDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="pdbName" type="string">
+                <column name="PDB_NAME" length="390" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.SchedulerProgramArgsTbl" table="SCHEDULER_PROGRAM_ARGS_TBL" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.SchedulerProgramArgsTblId">
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="programName" type="string">
+                <column name="PROGRAM_NAME" length="128" />
+            </key-property>
+            <key-property name="argumentName" type="string">
+                <column name="ARGUMENT_NAME" length="128" />
+            </key-property>
+            <key-property name="argumentPosition" type="big_decimal">
+                <column name="ARGUMENT_POSITION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="argumentType" type="string">
+                <column name="ARGUMENT_TYPE" length="257" />
+            </key-property>
+            <key-property name="metadataAttribute" type="string">
+                <column name="METADATA_ATTRIBUTE" length="19" />
+            </key-property>
+            <key-property name="defaultValue" type="string">
+                <column name="DEFAULT_VALUE" length="4000" />
+            </key-property>
+            <key-property name="defaultAnydataValue" type="serializable">
+                <column name="DEFAULT_ANYDATA_VALUE" />
+            </key-property>
+            <key-property name="outArgument" type="string">
+                <column name="OUT_ARGUMENT" length="5" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrggcGtlo" table="LOGMNRGGC_GTLO" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrggcGtloId">
+            <key-property name="logmnrUid" type="big_decimal">
+                <column name="LOGMNR_UID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="keyobj#" type="big_decimal">
+                <column name="KEYOBJ#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="baseobjv#" type="big_decimal">
+                <column name="BASEOBJV#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="lvlcnt" type="big_decimal">
+            <column name="LVLCNT" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="baseobj#" type="big_decimal">
+            <column name="BASEOBJ#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lvl1obj#" type="big_decimal">
+            <column name="LVL1OBJ#" precision="22" scale="0" />
+        </property>
+        <property name="lvl2obj#" type="big_decimal">
+            <column name="LVL2OBJ#" precision="22" scale="0" />
+        </property>
+        <property name="lvl0type#" type="big_decimal">
+            <column name="LVL0TYPE#" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lvl1type#" type="big_decimal">
+            <column name="LVL1TYPE#" precision="22" scale="0" />
+        </property>
+        <property name="lvl2type#" type="big_decimal">
+            <column name="LVL2TYPE#" precision="22" scale="0" />
+        </property>
+        <property name="owner#" type="big_decimal">
+            <column name="OWNER#" precision="22" scale="0" />
+        </property>
+        <property name="ownername" type="string">
+            <column name="OWNERNAME" length="384" not-null="true" />
+        </property>
+        <property name="lvl0name" type="string">
+            <column name="LVL0NAME" length="384" not-null="true" />
+        </property>
+        <property name="lvl1name" type="string">
+            <column name="LVL1NAME" length="384" />
+        </property>
+        <property name="lvl2name" type="string">
+            <column name="LVL2NAME" length="384" />
+        </property>
+        <property name="intcols" type="big_decimal">
+            <column name="INTCOLS" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="cols" type="big_decimal">
+            <column name="COLS" precision="22" scale="0" />
+        </property>
+        <property name="kernelcols" type="big_decimal">
+            <column name="KERNELCOLS" precision="22" scale="0" />
+        </property>
+        <property name="tabFlags" type="big_decimal">
+            <column name="TAB_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="trigflag" type="big_decimal">
+            <column name="TRIGFLAG" precision="22" scale="0" />
+        </property>
+        <property name="assoc#" type="big_decimal">
+            <column name="ASSOC#" precision="22" scale="0" />
+        </property>
+        <property name="objFlags" type="big_decimal">
+            <column name="OBJ_FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="ts#" type="big_decimal">
+            <column name="TS#" precision="22" scale="0" />
+        </property>
+        <property name="tsname" type="string">
+            <column name="TSNAME" length="90" />
+        </property>
+        <property name="property" type="big_decimal">
+            <column name="PROPERTY" precision="22" scale="0" />
+        </property>
+        <property name="startScn" type="big_decimal">
+            <column name="START_SCN" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dropScn" type="big_decimal">
+            <column name="DROP_SCN" precision="22" scale="0" />
+        </property>
+        <property name="xidusn" type="big_decimal">
+            <column name="XIDUSN" precision="22" scale="0" />
+        </property>
+        <property name="xidslt" type="big_decimal">
+            <column name="XIDSLT" precision="22" scale="0" />
+        </property>
+        <property name="xidsqn" type="big_decimal">
+            <column name="XIDSQN" precision="22" scale="0" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare1" type="big_decimal">
+            <column name="LOGMNR_SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare2" type="big_decimal">
+            <column name="LOGMNR_SPARE2" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare3" type="string">
+            <column name="LOGMNR_SPARE3" length="1000" />
+        </property>
+        <property name="logmnrSpare4" type="date">
+            <column name="LOGMNR_SPARE4" length="7" />
+        </property>
+        <property name="logmnrSpare5" type="big_decimal">
+            <column name="LOGMNR_SPARE5" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare6" type="big_decimal">
+            <column name="LOGMNR_SPARE6" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare7" type="big_decimal">
+            <column name="LOGMNR_SPARE7" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare8" type="big_decimal">
+            <column name="LOGMNR_SPARE8" precision="22" scale="0" />
+        </property>
+        <property name="logmnrSpare9" type="big_decimal">
+            <column name="LOGMNR_SPARE9" precision="22" scale="0" />
+        </property>
+        <property name="parttype" type="big_decimal">
+            <column name="PARTTYPE" precision="22" scale="0" />
+        </property>
+        <property name="subparttype" type="big_decimal">
+            <column name="SUBPARTTYPE" precision="22" scale="0" />
+        </property>
+        <property name="unsupportedcols" type="big_decimal">
+            <column name="UNSUPPORTEDCOLS" precision="22" scale="0" />
+        </property>
+        <property name="complextypecols" type="big_decimal">
+            <column name="COMPLEXTYPECOLS" precision="22" scale="0" />
+        </property>
+        <property name="ntparentobjnum" type="big_decimal">
+            <column name="NTPARENTOBJNUM" precision="22" scale="0" />
+        </property>
+        <property name="ntparentobjversion" type="big_decimal">
+            <column name="NTPARENTOBJVERSION" precision="22" scale="0" />
+        </property>
+        <property name="ntparentintcolnum" type="big_decimal">
+            <column name="NTPARENTINTCOLNUM" precision="22" scale="0" />
+        </property>
+        <property name="logmnrtloflags" type="big_decimal">
+            <column name="LOGMNRTLOFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="logmnrmcv" type="string">
+            <column name="LOGMNRMCV" length="30" />
+        </property>
+        <property name="acdrflags" type="big_decimal">
+            <column name="ACDRFLAGS" precision="22" scale="0" />
+        </property>
+        <property name="acdrtsobj#" type="big_decimal">
+            <column name="ACDRTSOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="acdrrowtsintcol#" type="big_decimal">
+            <column name="ACDRROWTSINTCOL#" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

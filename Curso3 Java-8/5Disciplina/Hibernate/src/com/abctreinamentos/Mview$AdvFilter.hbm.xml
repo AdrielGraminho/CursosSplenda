@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Mview$AdvFilter" table="MVIEW$_ADV_FILTER" optimistic-lock="version">
+        <comment>Table for workload filter definition</comment>
+        <composite-id name="id" class="com.abctreinamentos.Mview$AdvFilterId">
+            <key-property name="filterid#" type="big_decimal">
+                <column name="FILTERID#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="subfilternum#" type="big_decimal">
+                <column name="SUBFILTERNUM#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="subfiltertype" type="big_decimal">
+            <column name="SUBFILTERTYPE" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="strValue" type="string">
+            <column name="STR_VALUE" length="1028" />
+        </property>
+        <property name="numValue1" type="big_decimal">
+            <column name="NUM_VALUE1" precision="22" scale="0" />
+        </property>
+        <property name="numValue2" type="big_decimal">
+            <column name="NUM_VALUE2" precision="22" scale="0" />
+        </property>
+        <property name="dateValue1" type="date">
+            <column name="DATE_VALUE1" length="7" />
+        </property>
+        <property name="dateValue2" type="date">
+            <column name="DATE_VALUE2" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

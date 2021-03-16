@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$edsTables" table="LOGSTDBY$EDS_TABLES" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$edsTablesId">
+            <key-property name="owner" type="string">
+                <column name="OWNER" length="128" />
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column name="TABLE_NAME" length="128" />
+            </key-property>
+        </composite-id>
+        <property name="shadowTableName" type="string">
+            <column name="SHADOW_TABLE_NAME" length="128" />
+        </property>
+        <property name="baseTriggerName" type="string">
+            <column name="BASE_TRIGGER_NAME" length="128" />
+        </property>
+        <property name="shadowTriggerName" type="string">
+            <column name="SHADOW_TRIGGER_NAME" length="128" />
+        </property>
+        <property name="dblink" type="string">
+            <column name="DBLINK" />
+        </property>
+        <property name="flags" type="big_decimal">
+            <column name="FLAGS" precision="22" scale="0" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" />
+        </property>
+        <property name="objv" type="big_decimal">
+            <column name="OBJV" precision="22" scale="0" />
+        </property>
+        <property name="obj#" type="big_decimal">
+            <column name="OBJ#" precision="22" scale="0" />
+        </property>
+        <property name="sobj#" type="big_decimal">
+            <column name="SOBJ#" precision="22" scale="0" />
+        </property>
+        <property name="ctime" type="serializable">
+            <column name="CTIME" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="string">
+            <column name="SPARE2" />
+        </property>
+        <property name="spare3" type="big_decimal">
+            <column name="SPARE3" precision="22" scale="0" />
+        </property>
+        <property name="mviewName" type="string">
+            <column name="MVIEW_NAME" length="128" />
+        </property>
+        <property name="mviewLogName" type="string">
+            <column name="MVIEW_LOG_NAME" length="128" />
+        </property>
+        <property name="mviewTriggerName" type="string">
+            <column name="MVIEW_TRIGGER_NAME" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

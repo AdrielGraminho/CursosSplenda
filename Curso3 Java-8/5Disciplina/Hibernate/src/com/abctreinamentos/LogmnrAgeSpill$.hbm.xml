@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.LogmnrAgeSpill$" table="LOGMNR_AGE_SPILL$" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.LogmnrAgeSpill$Id">
+            <key-property name="session#" type="big_decimal">
+                <column name="SESSION#" precision="22" scale="0" />
+            </key-property>
+            <key-property name="pdbid" type="big_decimal">
+                <column name="PDBID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidusn" type="big_decimal">
+                <column name="XIDUSN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidslt" type="big_decimal">
+                <column name="XIDSLT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidsqn" type="big_decimal">
+                <column name="XIDSQN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="chunk" type="big_decimal">
+                <column name="CHUNK" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sequence#" type="big_decimal">
+                <column name="SEQUENCE#" precision="22" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="offset" type="big_decimal">
+            <column name="OFFSET" precision="22" scale="0" />
+        </property>
+        <property name="spillData" type="blob">
+            <column name="SPILL_DATA" />
+        </property>
+        <property name="spare1" type="big_decimal">
+            <column name="SPARE1" precision="22" scale="0" />
+        </property>
+        <property name="spare2" type="big_decimal">
+            <column name="SPARE2" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

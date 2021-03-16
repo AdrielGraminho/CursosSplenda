@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Rolling$events" table="ROLLING$EVENTS" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Rolling$eventsId">
+            <key-property name="eventid" type="big_decimal">
+                <column name="EVENTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="instid" type="big_decimal">
+                <column name="INSTID" precision="22" scale="0" />
+            </key-property>
+            <key-property name="revision" type="big_decimal">
+                <column name="REVISION" precision="22" scale="0" />
+            </key-property>
+            <key-property name="eventTime" type="serializable">
+                <column name="EVENT_TIME" />
+            </key-property>
+            <key-property name="type" type="string">
+                <column name="TYPE" length="16" />
+            </key-property>
+            <key-property name="status" type="big_decimal">
+                <column name="STATUS" precision="22" scale="0" />
+            </key-property>
+            <key-property name="message" type="string">
+                <column name="MESSAGE" length="256" />
+            </key-property>
+            <key-property name="spare1" type="big_decimal">
+                <column name="SPARE1" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="128" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

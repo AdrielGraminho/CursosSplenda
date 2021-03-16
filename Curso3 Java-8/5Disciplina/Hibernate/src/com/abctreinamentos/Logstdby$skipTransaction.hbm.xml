@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/03/2021 08:38:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.abctreinamentos.Logstdby$skipTransaction" table="LOGSTDBY$SKIP_TRANSACTION" optimistic-lock="version">
+        <composite-id name="id" class="com.abctreinamentos.Logstdby$skipTransactionId">
+            <key-property name="xidusn" type="big_decimal">
+                <column name="XIDUSN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidslt" type="big_decimal">
+                <column name="XIDSLT" precision="22" scale="0" />
+            </key-property>
+            <key-property name="xidsqn" type="big_decimal">
+                <column name="XIDSQN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="active" type="big_decimal">
+                <column name="ACTIVE" precision="22" scale="0" />
+            </key-property>
+            <key-property name="commitScn" type="big_decimal">
+                <column name="COMMIT_SCN" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare2" type="big_decimal">
+                <column name="SPARE2" precision="22" scale="0" />
+            </key-property>
+            <key-property name="spare3" type="string">
+                <column name="SPARE3" length="2000" />
+            </key-property>
+            <key-property name="conName" type="string">
+                <column name="CON_NAME" length="384" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
