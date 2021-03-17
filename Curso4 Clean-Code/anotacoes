@@ -4,3 +4,16 @@ Não se repetir
 
 Cuidar nome de variáveis (evitar letras soltas, notação húngara)
 
+Interligar o menos possível as classes (poucas dependencias)
+
+Cada @Test deve tentar ser independente
+
+Usar nome de testes com resultado esperado
+
+Complexidade Ciclomática: usada para testabilidade
+CC = Arestas - Nós + 1
+
+Complexidade cognitiva: baseada na percepção
+Ignora abreviações
+Quebra de fluxo +1
+cada aninhamento soma um número igual o seu nível
