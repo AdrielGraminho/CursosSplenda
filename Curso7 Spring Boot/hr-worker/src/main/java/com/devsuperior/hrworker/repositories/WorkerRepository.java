@@ -1,8 +1,8 @@
-package com.devSuperior.hrworker.repositories;
+package com.devsuperior.hrworker.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.devSuperior.hrworker.entities.Worker;
+import com.devsuperior.hrworker.entities.Worker;
 
 public interface WorkerRepository extends JpaRepository<Worker, Long> {
 
