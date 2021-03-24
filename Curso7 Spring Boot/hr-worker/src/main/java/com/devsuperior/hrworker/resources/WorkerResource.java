@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.hrworker.entities.Worker;
 import com.devsuperior.hrworker.repositories.WorkerRepository;
-import com.sun.org.slf4j.internal.LoggerFactory;
 
 @RestController
 @RequestMapping(value = "/workers")
