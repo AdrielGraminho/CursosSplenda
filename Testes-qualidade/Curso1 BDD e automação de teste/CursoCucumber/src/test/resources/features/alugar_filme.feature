@@ -5,7 +5,10 @@ Eu quero cadastrar aluguéis de filmes
 Para Controlar preços e datas de entreagas
 
 Cenário: Deve alugar filme com sucesso
-Dado um filme com estoque de 2 unidades
+Dado um filme 
+	| estoque |   2  |
+	| preco   |   3  |
+	| tipo    | comum|
 E que o preço do aluguel seja R$3
 Quando alugar
 Então o preço so aluguel será R$3
