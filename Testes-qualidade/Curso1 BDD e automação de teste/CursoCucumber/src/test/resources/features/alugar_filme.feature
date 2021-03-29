@@ -27,4 +27,11 @@ Então o preço so aluguel será R$8
 E a data de entrega será em 3 dias
 E a pontuação será de 2 pontos
 
-
+Cenário: Deve alugar para categoria comum
+Dado um filme com estoque de 2 unidades
+E que o preço do aluguel seja R$4
+E que o tipo de alguel seja comum
+Quando alugar
+Então o preço so aluguel será R$4
+E a data de entrega será em 1 dia
+E a pontuação será de 1 pontos

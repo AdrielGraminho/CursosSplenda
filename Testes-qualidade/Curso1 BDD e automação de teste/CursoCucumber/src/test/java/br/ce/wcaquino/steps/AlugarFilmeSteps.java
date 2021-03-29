@@ -60,9 +60,9 @@ public class AlugarFilmeSteps {
 		Assert.assertEquals("Filme sem estoque", erro);
 	}
 
-	@Dado("^que o tipo de alguel seja extendido$")
-	public void queOTipoDeAlguelSejaExtendido() throws Throwable {
-		tipoAluguel = "extendido";
+	@Dado("^que o tipo de alguel seja (.*)$")
+	public void queOTipoDeAlguelSejaExtendido(String tipo) throws Throwable {
+		tipoAluguel = tipo;
 	}
 
 	@Então("^a data de entrega será em (\\d+) dias?$")
