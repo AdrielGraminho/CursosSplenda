@@ -1,0 +1,2 @@
+Subir server nginx na 8080, cuidar flag ":Z"
+docker run -p 8080:80 -v /home/adrieldev/CursosSplenda/arquitetura-infra/Curso\ 1\ docker/ex-volume/html/:/usr/share/nginx/html:Z nginx
