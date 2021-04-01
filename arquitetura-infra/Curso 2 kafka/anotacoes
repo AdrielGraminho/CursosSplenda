@@ -1,0 +1,14 @@
+Startar zookeeper:
+zookeeper-server-start.sh /home/adrieldev/kafka/config/zookeeper.properties
+
+startar kafka
+kafka-server-start.sh /home/adrieldev/kafka/config/server.properties
+
+listar tópicos
+kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+criar tópico com nome "teste"
+kafka-topics.sh --bootstrap-server localhost:9092 --create --topic teste
+
+mostrar mensagem do início
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic teste --from-beginning
