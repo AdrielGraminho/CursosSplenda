@@ -1,0 +1,964 @@
+06-Apr-2021 08:11:42.764 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 08:11:42.792 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 08:11:42.793 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 08:11:43.093 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 08:11:43.116 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 08:11:43.132 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 08:11:43.133 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 08:11:43.134 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1049 ms
+06-Apr-2021 08:11:43.185 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 08:11:43.186 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 08:11:43.244 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 08:11:50.157 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:152)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:132)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:92)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:172)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+		... 29 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+		... 33 more
+	Caused by: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5433 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+		at org.postgresql.Driver.makeConnection(Driver.java:458)
+		at org.postgresql.Driver.connect(Driver.java:260)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+		... 49 more
+	Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
+		at java.net.PlainSocketImpl.socketConnect(Native Method)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:75)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+		... 63 more
+06-Apr-2021 08:11:50.160 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 08:11:50.161 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,917] ms
+06-Apr-2021 08:11:50.174 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 08:11:52.980 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 08:11:53.011 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,837] ms
+06-Apr-2021 08:11:53.011 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 08:11:53.039 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [28] ms
+06-Apr-2021 08:11:53.039 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 08:11:53.049 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [10] ms
+06-Apr-2021 08:11:53.049 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 08:11:53.205 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [156] ms
+06-Apr-2021 08:11:53.206 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 08:11:53.223 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [17] ms
+06-Apr-2021 08:11:53.223 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 08:11:53.236 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [13] ms
+06-Apr-2021 08:11:53.239 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 08:11:53.246 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 08:11:53.248 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 10113 ms
+06-Apr-2021 08:15:00.343 ADVERTÊNCIA [http-nio-8001-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 08:15:00.868 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 08:15:01.149 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 08:15:06.154 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 08:15:06.162 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,013] ms
+06-Apr-2021 08:15:36.909 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 08:15:37.062 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 08:15:39.418 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 08:15:39.424 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,361] ms
+06-Apr-2021 09:12:03.589 ADVERTÊNCIA [http-nio-8001-exec-25] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 09:12:04.124 INFORMAÇÕES [http-nio-8001-exec-25] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 09:12:04.369 INFORMAÇÕES [http-nio-8001-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 09:12:13.647 INFORMAÇÕES [http-nio-8001-exec-17] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 09:12:13.653 INFORMAÇÕES [http-nio-8001-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [9,284] ms
+06-Apr-2021 09:12:46.155 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 09:12:46.308 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 09:12:48.576 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 09:12:48.581 INFORMAÇÕES [http-nio-8001-exec-28] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,274] ms
+06-Apr-2021 09:43:05.335 ADVERTÊNCIA [http-nio-8001-exec-37] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 09:43:05.916 INFORMAÇÕES [http-nio-8001-exec-37] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 09:43:06.132 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 09:43:12.327 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 09:43:12.334 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,201] ms
+06-Apr-2021 09:43:45.426 INFORMAÇÕES [http-nio-8001-exec-49] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 09:43:45.555 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 09:43:47.943 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 09:43:47.949 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,394] ms
+06-Apr-2021 10:57:06.426 ADVERTÊNCIA [http-nio-8001-exec-56] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 10:57:06.960 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 10:57:08.169 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 10:57:13.398 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 10:57:13.405 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,235] ms
+06-Apr-2021 10:57:42.508 INFORMAÇÕES [http-nio-8001-exec-67] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 10:57:42.624 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 10:57:44.953 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 10:57:44.960 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,335] ms
+06-Apr-2021 11:05:31.595 ADVERTÊNCIA [http-nio-8001-exec-81] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:05:32.111 INFORMAÇÕES [http-nio-8001-exec-81] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 11:05:33.157 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:05:38.825 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:05:38.833 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,677] ms
+06-Apr-2021 11:06:05.391 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 11:06:05.534 INFORMAÇÕES [http-nio-8001-exec-80] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:06:07.852 INFORMAÇÕES [http-nio-8001-exec-80] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:06:07.859 INFORMAÇÕES [http-nio-8001-exec-80] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,325] ms
+06-Apr-2021 11:11:22.865 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 11:11:22.867 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:11:22.874 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:11:22.880 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 11:11:23.086 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:11:23.124 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:11:23.126 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:11:23.127 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:11:23.129 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:11:38.282 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 11:11:38.310 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 11:11:38.311 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 11:11:38.312 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 11:11:38.563 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:11:38.584 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:11:38.604 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:11:38.606 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:11:38.606 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 807 ms
+06-Apr-2021 11:11:38.653 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 11:11:38.653 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 11:11:38.684 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:11:45.439 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:11:45.610 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,925] ms
+06-Apr-2021 11:11:45.621 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:11:48.360 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:11:48.366 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,745] ms
+06-Apr-2021 11:11:48.367 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 11:11:48.384 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [16] ms
+06-Apr-2021 11:11:48.384 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 11:11:48.399 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [15] ms
+06-Apr-2021 11:11:48.400 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 11:11:48.605 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [206] ms
+06-Apr-2021 11:11:48.606 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 11:11:48.630 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [24] ms
+06-Apr-2021 11:11:48.631 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 11:11:48.648 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [16] ms
+06-Apr-2021 11:11:48.652 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:11:48.660 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:11:48.662 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 10055 ms
+06-Apr-2021 11:12:21.997 ADVERTÊNCIA [http-nio-8001-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:12:22.535 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 11:12:22.860 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:12:28.953 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:12:28.960 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,100] ms
+06-Apr-2021 11:12:57.262 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 11:12:57.447 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:12:59.712 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:12:59.717 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,270] ms
+06-Apr-2021 11:22:58.904 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 11:22:58.906 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:22:58.913 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:22:58.919 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 11:22:59.123 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:22:59.161 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:22:59.163 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:22:59.165 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:22:59.166 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:23:06.534 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 11:23:06.558 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 11:23:06.558 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 11:23:06.558 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 11:23:06.558 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 11:23:06.559 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 11:23:06.560 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 11:23:06.560 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:23:06.560 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:23:06.560 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 11:23:06.560 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 11:23:06.818 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:23:06.848 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:23:06.865 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:23:06.867 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:23:06.867 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 769 ms
+06-Apr-2021 11:23:06.907 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 11:23:06.907 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 11:23:06.922 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:23:06.938 GRAVE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/tasks-backend]
+	java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war (Permissão negada)
+		at java.io.FileInputStream.open0(Native Method)
+		at java.io.FileInputStream.open(FileInputStream.java:195)
+		at java.io.FileInputStream.<init>(FileInputStream.java:138)
+		at java.io.FileInputStream.<init>(FileInputStream.java:93)
+		at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+		at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:616)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:749)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:23:06.950 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@1e944c39]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:714)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4814)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4949)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war (Permissão negada)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:142)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		... 16 more
+	Caused by: java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war (Permissão negada)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:167)
+		at java.util.jar.JarFile.<init>(JarFile.java:131)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:182)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:139)
+		... 17 more
+06-Apr-2021 11:23:06.950 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@1e944c39]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:23:06.951 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [29] ms
+06-Apr-2021 11:23:06.951 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:23:06.953 GRAVE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/tasks]
+	java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war (Permissão negada)
+		at java.io.FileInputStream.open0(Native Method)
+		at java.io.FileInputStream.open(FileInputStream.java:195)
+		at java.io.FileInputStream.<init>(FileInputStream.java:138)
+		at java.io.FileInputStream.<init>(FileInputStream.java:93)
+		at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+		at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:616)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:749)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:23:06.954 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@a150d96]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:714)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4814)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4949)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war (Permissão negada)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:142)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		... 16 more
+	Caused by: java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war (Permissão negada)
+		at java.util.zip.ZipFile.open(Native Method)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+		at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+		at java.util.jar.JarFile.<init>(JarFile.java:167)
+		at java.util.jar.JarFile.<init>(JarFile.java:131)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:197)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:182)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:139)
+		... 17 more
+06-Apr-2021 11:23:06.954 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@a150d96]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:23:06.955 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [4] ms
+06-Apr-2021 11:23:06.955 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 11:23:07.217 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [262] ms
+06-Apr-2021 11:23:07.217 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 11:23:07.234 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [17] ms
+06-Apr-2021 11:23:07.235 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 11:23:07.477 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [242] ms
+06-Apr-2021 11:23:07.477 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 11:23:07.498 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [20] ms
+06-Apr-2021 11:23:07.498 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 11:23:07.515 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [17] ms
+06-Apr-2021 11:23:07.518 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:23:07.524 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:23:07.526 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 659 ms
+06-Apr-2021 11:25:03.708 GRAVE [http-nio-8001-exec-7] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/tasks]
+	java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war (Permissão negada)
+		at java.io.FileInputStream.open0(Native Method)
+		at java.io.FileInputStream.open(FileInputStream.java:195)
+		at java.io.FileInputStream.<init>(FileInputStream.java:138)
+		at java.io.FileInputStream.<init>(FileInputStream.java:93)
+		at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+		at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:616)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:749)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1383)
+		at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:694)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:218)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:25:06.601 GRAVE [http-nio-8001-exec-5] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/tasks-backend]
+	java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war (Permissão negada)
+		at java.io.FileInputStream.open0(Native Method)
+		at java.io.FileInputStream.open(FileInputStream.java:195)
+		at java.io.FileInputStream.<init>(FileInputStream.java:138)
+		at java.io.FileInputStream.<init>(FileInputStream.java:93)
+		at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+		at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:616)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:749)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1383)
+		at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:694)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:218)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:26:20.199 GRAVE [http-nio-8001-exec-12] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/tasks-backend]
+	java.io.FileNotFoundException: /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war (Permissão negada)
+		at java.io.FileInputStream.open0(Native Method)
+		at java.io.FileInputStream.open(FileInputStream.java:195)
+		at java.io.FileInputStream.<init>(FileInputStream.java:138)
+		at java.io.FileInputStream.<init>(FileInputStream.java:93)
+		at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+		at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:616)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:749)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+		at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1383)
+		at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:694)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:218)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:211)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:609)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+06-Apr-2021 11:26:28.081 INFORMAÇÕES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 11:26:28.083 GRAVE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ExpandWar.deleteDir [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks] could not be completely deleted. The presence of the remaining files may cause problems
+06-Apr-2021 11:26:28.083 GRAVE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ExpandWar.delete [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks] could not be completely deleted. The presence of the remaining files may cause problems
+06-Apr-2021 11:26:28.084 INFORMAÇÕES [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks]
+06-Apr-2021 11:26:28.109 INFORMAÇÕES [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks] has finished in [25] ms
+06-Apr-2021 11:26:38.611 INFORMAÇÕES [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 11:26:38.614 GRAVE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ExpandWar.deleteDir [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend] could not be completely deleted. The presence of the remaining files may cause problems
+06-Apr-2021 11:26:38.614 GRAVE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ExpandWar.delete [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend] could not be completely deleted. The presence of the remaining files may cause problems
+06-Apr-2021 11:26:38.616 INFORMAÇÕES [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend]
+06-Apr-2021 11:26:38.632 INFORMAÇÕES [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend] has finished in [15] ms
+06-Apr-2021 11:26:51.475 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks]] after stop() had already been called. The second call will be ignored.
+06-Apr-2021 11:26:54.506 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]] after stop() had already been called. The second call will be ignored.
+06-Apr-2021 11:27:05.287 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]] after stop() had already been called. The second call will be ignored.
+06-Apr-2021 11:28:22.603 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 11:28:22.604 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:28:22.616 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:28:22.622 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 11:28:22.652 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:28:22.655 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:28:22.656 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:28:22.657 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:28:30.138 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 11:28:30.140 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 11:28:30.140 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 11:28:30.140 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 11:28:30.140 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:28:30.141 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:28:30.142 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 11:28:30.143 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 11:28:30.249 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:28:30.258 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:28:30.270 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:28:30.271 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:28:30.272 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 510 ms
+06-Apr-2021 11:28:30.312 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 11:28:30.313 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 11:28:30.318 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 11:28:30.535 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [216] ms
+06-Apr-2021 11:28:30.535 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 11:28:30.552 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [17] ms
+06-Apr-2021 11:28:30.553 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 11:28:30.784 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [231] ms
+06-Apr-2021 11:28:30.784 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 11:28:30.802 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [18] ms
+06-Apr-2021 11:28:30.802 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 11:28:30.832 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [30] ms
+06-Apr-2021 11:28:30.832 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend]
+06-Apr-2021 11:28:30.851 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend] has finished in [19] ms
+06-Apr-2021 11:28:30.852 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks]
+06-Apr-2021 11:28:30.863 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks] has finished in [11] ms
+06-Apr-2021 11:28:30.866 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:28:30.872 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:28:30.874 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 601 ms
+06-Apr-2021 11:29:34.296 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 11:29:34.296 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:29:34.306 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:29:34.312 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 11:29:34.371 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:29:34.373 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:29:34.374 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:29:34.374 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:29:42.883 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 11:29:42.907 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:29:42.908 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 11:29:42.909 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 11:29:43.134 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:29:43.154 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:29:43.171 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:29:43.172 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:29:43.173 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 653 ms
+06-Apr-2021 11:29:43.210 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 11:29:43.210 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 11:29:43.219 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 11:29:43.411 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [191] ms
+06-Apr-2021 11:29:43.411 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 11:29:43.427 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [16] ms
+06-Apr-2021 11:29:43.427 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 11:29:43.612 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [185] ms
+06-Apr-2021 11:29:43.612 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 11:29:43.633 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [21] ms
+06-Apr-2021 11:29:43.633 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 11:29:43.664 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [30] ms
+06-Apr-2021 11:29:43.664 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend]
+06-Apr-2021 11:29:50.427 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:29:50.434 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend] has finished in [6,770] ms
+06-Apr-2021 11:29:50.434 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks]
+06-Apr-2021 11:29:53.256 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:29:53.263 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks] has finished in [2,829] ms
+06-Apr-2021 11:29:53.266 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:29:53.274 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:29:53.278 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 10105 ms
+06-Apr-2021 11:30:00.057 ADVERTÊNCIA [http-nio-8001-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:30:03.418 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]] after stop() had already been called. The second call will be ignored.
+06-Apr-2021 11:30:03.944 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 11:30:10.548 INFORMAÇÕES [http-nio-8001-exec-5] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks]] after stop() had already been called. The second call will be ignored.
+06-Apr-2021 11:30:11.069 INFORMAÇÕES [http-nio-8001-exec-5] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 11:32:10.587 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 11:32:10.587 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:32:10.593 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:32:10.599 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 11:32:10.615 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:32:10.617 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:32:10.618 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:32:10.619 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:32:22.714 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 11:32:22.716 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 11:32:22.717 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 11:32:22.718 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 11:32:22.718 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:32:22.718 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 11:32:22.718 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 11:32:22.718 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 11:32:22.837 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:32:22.846 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:32:22.858 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:32:22.860 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 11:32:22.860 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 456 ms
+06-Apr-2021 11:32:22.890 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 11:32:22.890 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 11:32:22.898 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 11:32:23.097 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [199] ms
+06-Apr-2021 11:32:23.098 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 11:32:23.113 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [14] ms
+06-Apr-2021 11:32:23.113 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 11:32:23.325 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [212] ms
+06-Apr-2021 11:32:23.325 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 11:32:23.341 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [16] ms
+06-Apr-2021 11:32:23.342 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 11:32:23.359 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [17] ms
+06-Apr-2021 11:32:23.362 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 11:32:23.370 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 11:32:23.371 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 511 ms
+06-Apr-2021 11:33:18.068 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:33:24.480 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:33:24.488 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,420] ms
+06-Apr-2021 11:33:50.035 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:33:52.863 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:33:52.868 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,833] ms
+06-Apr-2021 11:53:21.656 ADVERTÊNCIA [http-nio-8001-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 11:53:22.189 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 11:53:22.430 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 11:53:27.437 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:53:27.444 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,014] ms
+06-Apr-2021 11:53:56.240 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 11:53:56.406 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 11:53:58.791 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 11:53:58.796 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,390] ms
+06-Apr-2021 12:01:09.915 ADVERTÊNCIA [http-nio-8001-exec-17] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 12:01:10.441 INFORMAÇÕES [http-nio-8001-exec-17] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 12:01:10.651 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 12:01:17.032 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 12:01:17.038 INFORMAÇÕES [http-nio-8001-exec-20] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,387] ms
+06-Apr-2021 12:01:45.597 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 12:01:45.737 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 12:01:48.015 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 12:01:48.020 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,283] ms
+06-Apr-2021 13:36:41.619 ADVERTÊNCIA [http-nio-8001-exec-41] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:36:42.145 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:36:42.406 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:36:49.077 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:36:49.088 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,681] ms
+06-Apr-2021 13:39:55.799 ADVERTÊNCIA [http-nio-8001-exec-44] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:39:56.327 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:39:56.590 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:40:04.030 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:40:04.037 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [7,446] ms
+06-Apr-2021 13:45:45.031 ADVERTÊNCIA [http-nio-8001-exec-49] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:45:45.552 INFORMAÇÕES [http-nio-8001-exec-49] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:45:45.787 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:45:51.222 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:45:51.228 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,441] ms
+06-Apr-2021 13:48:40.062 ADVERTÊNCIA [http-nio-8001-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:48:40.585 INFORMAÇÕES [http-nio-8001-exec-57] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:48:40.798 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:48:46.095 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:48:46.102 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,304] ms
+06-Apr-2021 13:55:40.840 ADVERTÊNCIA [http-nio-8001-exec-65] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:55:41.359 INFORMAÇÕES [http-nio-8001-exec-65] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:55:41.570 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:55:49.017 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:55:49.025 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [7,455] ms
+06-Apr-2021 13:58:21.211 ADVERTÊNCIA [http-nio-8001-exec-75] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 13:58:21.730 INFORMAÇÕES [http-nio-8001-exec-75] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 13:58:21.970 INFORMAÇÕES [http-nio-8001-exec-81] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 13:58:27.350 INFORMAÇÕES [http-nio-8001-exec-81] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 13:58:27.357 INFORMAÇÕES [http-nio-8001-exec-81] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,386] ms
+06-Apr-2021 14:02:02.753 ADVERTÊNCIA [http-nio-8001-exec-84] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 14:02:03.273 INFORMAÇÕES [http-nio-8001-exec-84] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 14:02:03.538 INFORMAÇÕES [http-nio-8001-exec-85] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 14:02:08.777 INFORMAÇÕES [http-nio-8001-exec-85] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:02:08.784 INFORMAÇÕES [http-nio-8001-exec-85] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,245] ms
+06-Apr-2021 14:02:25.990 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 14:02:26.115 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 14:02:29.232 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:02:29.239 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,124] ms
+06-Apr-2021 14:06:34.532 ADVERTÊNCIA [http-nio-8001-exec-98] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 14:06:35.060 INFORMAÇÕES [http-nio-8001-exec-98] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 14:06:35.288 INFORMAÇÕES [http-nio-8001-exec-97] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 14:06:41.493 INFORMAÇÕES [http-nio-8001-exec-97] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:06:41.500 INFORMAÇÕES [http-nio-8001-exec-97] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,212] ms
+06-Apr-2021 14:06:54.775 INFORMAÇÕES [http-nio-8001-exec-88] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 14:06:54.907 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 14:06:57.682 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:06:57.689 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,782] ms
+06-Apr-2021 14:09:19.240 ADVERTÊNCIA [http-nio-8001-exec-109] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 14:09:19.761 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 14:09:19.994 INFORMAÇÕES [http-nio-8001-exec-107] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 14:09:25.396 INFORMAÇÕES [http-nio-8001-exec-107] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:09:25.405 INFORMAÇÕES [http-nio-8001-exec-107] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,411] ms
+06-Apr-2021 14:09:37.624 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 14:09:37.753 INFORMAÇÕES [http-nio-8001-exec-111] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 14:09:40.469 INFORMAÇÕES [http-nio-8001-exec-111] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 14:09:40.477 INFORMAÇÕES [http-nio-8001-exec-111] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,724] ms
+06-Apr-2021 15:26:24.401 ADVERTÊNCIA [http-nio-8001-exec-120] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 15:26:24.927 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 15:26:25.144 INFORMAÇÕES [http-nio-8001-exec-125] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 15:26:31.090 INFORMAÇÕES [http-nio-8001-exec-125] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 15:26:31.098 INFORMAÇÕES [http-nio-8001-exec-125] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,954] ms
+06-Apr-2021 15:26:47.401 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 15:26:47.534 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 15:26:50.258 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 15:26:50.266 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,732] ms
+06-Apr-2021 15:42:18.404 ADVERTÊNCIA [http-nio-8001-exec-131] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 15:42:18.924 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 15:42:19.112 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 15:42:28.548 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 15:42:28.557 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [9,445] ms
+06-Apr-2021 15:42:46.007 INFORMAÇÕES [http-nio-8001-exec-132] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 15:42:46.129 INFORMAÇÕES [http-nio-8001-exec-141] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 15:42:50.353 INFORMAÇÕES [http-nio-8001-exec-141] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 15:42:50.361 INFORMAÇÕES [http-nio-8001-exec-141] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [4,232] ms
+06-Apr-2021 15:50:15.538 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 15:50:15.677 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 15:50:15.684 INFORMAÇÕES [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 15:50:17.950 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 15:50:19.243 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 15:50:21.794 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 15:50:24.874 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 15:50:25.368 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 16:19:06.384 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2021 16:19:06.387 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2021 16:19:06.387 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2021 16:19:06.387 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.11.11-200.fc33.x86_64
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_281-amd64/jre
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 16:19:06.388 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 16:19:06.389 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50
+06-Apr-2021 16:19:06.390 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2021 16:19:06.390 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+06-Apr-2021 16:19:06.529 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 16:19:06.551 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 16:19:06.569 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 16:19:06.570 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2021 16:19:06.571 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 608 ms
+06-Apr-2021 16:19:06.605 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2021 16:19:06.606 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2021 16:19:06.647 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 16:19:12.974 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:19:13.195 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,547] ms
+06-Apr-2021 16:19:13.212 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 16:19:17.007 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:19:17.027 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,815] ms
+06-Apr-2021 16:19:17.029 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2021 16:19:17.061 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [32] ms
+06-Apr-2021 16:19:17.066 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2021 16:19:17.086 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [20] ms
+06-Apr-2021 16:19:17.088 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2021 16:19:17.509 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [421] ms
+06-Apr-2021 16:19:17.509 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2021 16:19:17.562 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [53] ms
+06-Apr-2021 16:19:17.563 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2021 16:19:17.589 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [27] ms
+06-Apr-2021 16:19:17.602 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 16:19:17.636 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 16:19:17.654 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 11082 ms
+06-Apr-2021 16:19:55.091 ADVERTÊNCIA [http-nio-8001-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 16:19:55.615 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 16:19:55.911 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 16:20:02.099 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:20:02.106 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [6,195] ms
+06-Apr-2021 16:20:19.160 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 16:20:19.336 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 16:20:22.630 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:20:22.637 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,300] ms
+06-Apr-2021 16:23:29.246 ADVERTÊNCIA [http-nio-8001-exec-17] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 16:23:29.769 INFORMAÇÕES [http-nio-8001-exec-17] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2021 16:23:29.964 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2021 16:23:35.490 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:23:35.496 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,532] ms
+06-Apr-2021 16:23:49.516 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2021 16:23:49.640 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2021 16:23:52.153 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2021 16:23:52.160 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,520] ms
+06-Apr-2021 16:27:25.301 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2021 16:27:25.303 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 16:27:25.309 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 16:27:25.315 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2021 16:27:25.569 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2021 16:27:25.637 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 16:27:25.640 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2021 16:27:25.642 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2021 16:27:25.644 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

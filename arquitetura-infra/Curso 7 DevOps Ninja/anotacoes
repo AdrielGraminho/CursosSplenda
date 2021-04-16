@@ -1,0 +1,4 @@
+ssh -i rancher.pem ubuntu@3.239.111.170 --rancher server
+ssh -i rancher.pem ubuntu@3.238.247.134 --ks8-1
+ssh -i rancher.pem ubuntu@44.192.26.117 --ks8-2
+ssh -i rancher.pem ubuntu@34.236.38.240 --ks8-3

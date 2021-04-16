@@ -1,0 +1,102 @@
+07-Apr-2021 07:59:54.939 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+07-Apr-2021 07:59:54.939 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+07-Apr-2021 07:59:54.946 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 07:59:54.955 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 07:59:54.957 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 07:59:55.714 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 07:59:55.714 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 08:00:16.728 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:00:16.731 INFORMAÇÕES [http-nio-8001-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:00:16.733 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 08:00:17.412 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 08:00:17.412 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 08:13:01.038 INFORMAÇÕES [http-nio-8001-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:13:01.040 INFORMAÇÕES [http-nio-8001-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:13:01.042 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 08:13:01.853 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 08:13:01.854 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 08:13:25.168 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:13:25.170 INFORMAÇÕES [http-nio-8001-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:13:25.172 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 08:13:25.866 INFORMAÇÕES [http-nio-8001-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 08:13:25.867 INFORMAÇÕES [http-nio-8001-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 08:20:38.008 INFORMAÇÕES [http-nio-8001-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:20:38.010 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:20:38.011 INFORMAÇÕES [http-nio-8001-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 08:20:38.838 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 08:20:38.838 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 08:21:00.621 INFORMAÇÕES [http-nio-8001-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:21:00.623 INFORMAÇÕES [http-nio-8001-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:21:00.624 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 08:21:01.294 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 08:21:01.294 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 08:26:23.642 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:26:23.644 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:26:23.646 INFORMAÇÕES [http-nio-8001-exec-45] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 08:26:24.429 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 08:26:24.429 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 08:26:45.485 INFORMAÇÕES [http-nio-8001-exec-53] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:26:45.487 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:26:45.489 INFORMAÇÕES [http-nio-8001-exec-47] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 08:26:46.169 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 08:26:46.169 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 08:29:15.712 INFORMAÇÕES [http-nio-8001-exec-63] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:29:15.714 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:29:15.716 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 08:29:16.552 INFORMAÇÕES [http-nio-8001-exec-64] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 08:29:16.552 INFORMAÇÕES [http-nio-8001-exec-64] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 08:29:37.384 INFORMAÇÕES [http-nio-8001-exec-65] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:29:37.386 INFORMAÇÕES [http-nio-8001-exec-63] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 08:29:37.388 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 08:29:38.083 INFORMAÇÕES [http-nio-8001-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 08:29:38.083 INFORMAÇÕES [http-nio-8001-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 09:43:19.829 INFORMAÇÕES [http-nio-8001-exec-81] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:43:19.831 INFORMAÇÕES [http-nio-8001-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:43:19.833 INFORMAÇÕES [http-nio-8001-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 09:43:20.495 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 09:43:20.495 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 09:43:43.726 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:43:43.727 INFORMAÇÕES [http-nio-8001-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:43:43.729 INFORMAÇÕES [http-nio-8001-exec-75] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 09:43:44.420 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 09:43:44.420 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 09:45:55.768 INFORMAÇÕES [http-nio-8001-exec-94] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:45:55.770 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:45:55.772 INFORMAÇÕES [http-nio-8001-exec-91] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 09:45:56.454 INFORMAÇÕES [http-nio-8001-exec-89] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 09:45:56.454 INFORMAÇÕES [http-nio-8001-exec-89] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 09:46:17.179 INFORMAÇÕES [http-nio-8001-exec-97] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:46:17.181 INFORMAÇÕES [http-nio-8001-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:46:17.183 INFORMAÇÕES [http-nio-8001-exec-88] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 09:46:17.723 INFORMAÇÕES [http-nio-8001-exec-94] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 09:46:17.723 INFORMAÇÕES [http-nio-8001-exec-94] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 09:49:03.799 INFORMAÇÕES [http-nio-8001-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:49:03.801 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:49:03.802 INFORMAÇÕES [http-nio-8001-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 09:49:04.372 INFORMAÇÕES [http-nio-8001-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 09:49:04.373 INFORMAÇÕES [http-nio-8001-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 09:49:24.277 INFORMAÇÕES [http-nio-8001-exec-110] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:49:24.278 INFORMAÇÕES [http-nio-8001-exec-111] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:49:24.279 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 09:49:24.817 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 09:49:24.817 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 09:51:02.561 INFORMAÇÕES [http-nio-8001-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:51:02.562 INFORMAÇÕES [http-nio-8001-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:51:02.563 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 09:51:03.699 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 09:51:03.700 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 09:51:23.210 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:51:23.212 INFORMAÇÕES [http-nio-8001-exec-125] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 09:51:23.213 INFORMAÇÕES [http-nio-8001-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 09:51:23.755 INFORMAÇÕES [http-nio-8001-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 09:51:23.755 INFORMAÇÕES [http-nio-8001-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
+07-Apr-2021 10:06:10.848 INFORMAÇÕES [http-nio-8001-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 10:06:10.850 INFORMAÇÕES [http-nio-8001-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 10:06:10.851 INFORMAÇÕES [http-nio-8001-exec-133] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2021 10:06:11.631 INFORMAÇÕES [http-nio-8001-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2021 10:06:11.631 INFORMAÇÕES [http-nio-8001-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war
+07-Apr-2021 10:06:33.144 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 10:06:33.145 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2021 10:06:33.147 INFORMAÇÕES [http-nio-8001-exec-130] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2021 10:06:33.693 INFORMAÇÕES [http-nio-8001-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2021 10:06:33.693 INFORMAÇÕES [http-nio-8001-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/adrieldev/CursosSplenda/arquitetura-infra/Curso 3 Jenkins/apache-tomcat-8.5.50/webapps/tasks.war
