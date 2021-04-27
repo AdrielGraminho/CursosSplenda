@@ -1,2 +1,4 @@
 /.metadata/
 /Curso7 Spring Boot/.metadata
+node_modules
+*.log
